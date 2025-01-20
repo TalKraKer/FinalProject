@@ -20,6 +20,7 @@ public class CustomerBehaveior : MonoBehaviour
     public GameObject[] Plants;
 
     LineManagment LineManager;
+    public int CurrentCustomerNumber = 0;
 
     public enum StateMachine
     {
@@ -51,6 +52,7 @@ public class CustomerBehaveior : MonoBehaviour
         //line
         LineManager = GameObject.FindGameObjectWithTag("LineManager").GetComponent<LineManagment>();
         EventManager.LineLeaveEvent += ProgInLine;
+        EventManager.RegisterRealeseEvent += RegisterInteraction;
     }
 
     // Update is called once per frame
@@ -109,6 +111,7 @@ public class CustomerBehaveior : MonoBehaviour
     public void OnDestroy()
     {
         EventManager.LineLeaveEvent -= ProgInLine;
+        EventManager.RegisterRealeseEvent -= RegisterInteraction;
     }
 
     public void NextState()
@@ -127,7 +130,8 @@ public class CustomerBehaveior : MonoBehaviour
             if (transform.position.y != 0)
             {
                 EventManager.EnterLine();
-                LineOffset = new Vector2(0-LineManager.CustomerNumber, 0);
+                CurrentCustomerNumber = LineManager.CustomerNumber;
+                LineOffset = new Vector2(0- CurrentCustomerNumber, 0);
                 CurrentState = StateMachine.WalkToLine;
             }
             else
@@ -178,8 +182,17 @@ public class CustomerBehaveior : MonoBehaviour
         }
     }
 
+    public void RegisterInteraction()
+    {
+        if (CurrentState == StateMachine.InLine && CurrentCustomerNumber == 1)
+        {
+            NextState();
+        }
+    }
+
     public void ProgInLine()
     {
+        CurrentCustomerNumber -= 1;
         LineOffset = new Vector2(LineOffset.x + 1, 0);
     }
 

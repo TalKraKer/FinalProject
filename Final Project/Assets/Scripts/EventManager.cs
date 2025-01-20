@@ -7,6 +7,7 @@ public class EventManager : MonoBehaviour
 {
     public static event Action LineEnterEvent;
     public static event Action LineLeaveEvent;
+    public static event Action RegisterRealeseEvent;
 
     public static void EnterLine()
     {
@@ -18,4 +19,8 @@ public class EventManager : MonoBehaviour
         LineLeaveEvent?.Invoke();
     }
 
+    public static void RegisterRealese()
+    {
+        RegisterRealeseEvent?.Invoke();
+    }
 }
