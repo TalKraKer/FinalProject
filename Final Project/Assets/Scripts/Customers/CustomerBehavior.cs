@@ -19,10 +19,13 @@ public class CustomerBehavior : MonoBehaviour
     Vector2 PlantOffset;
     public GameObject[] Plants;
 
+    bool onPlant;
+    GameObject PlantYouPick;
+
     LineManagment LineManager;
     public int CurrentCustomerNumber = 0;
 
-    public enum CustomerStateMachine
+    public enum StateMachine
     {
         WalkToFlower,
         WalkToLine,
@@ -31,8 +34,10 @@ public class CustomerBehavior : MonoBehaviour
         Exit
     }
 
-    public CustomerStateMachine CurrentState;
+    public StateMachine CurrentState;
 
+
+    // Start is called before the first frame update
     void Start()
     {
         step = 4.0f * Time.deltaTime;
@@ -42,42 +47,53 @@ public class CustomerBehavior : MonoBehaviour
         transform.position.Set(StartPoint.x, StartPoint.y, 0);
         SetMinMax();
 
-        //Plants as fixed points
+        //plants as fixed points
         PlantOffset = new Vector2(1, 0);
         Plants = GameObject.FindGameObjectsWithTag("Plant");
         SetRandomPlantToWalkTo();
 
-        //Line
+        //line
         LineManager = GameObject.FindGameObjectWithTag("LineManager").GetComponent<LineManagment>();
         EventManager.LineLeaveEvent += ProgInLine;
         EventManager.RegisterRealeseEvent += RegisterInteraction;
     }
 
+    // Update is called once per frame
     void Update()
     {
         switch (CurrentState)
         {
-            case CustomerStateMachine.WalkToFlower:
+            case StateMachine.WalkToFlower:
                 MoveToPointXFirst(FlowerPoint);
                 break;
-            case CustomerStateMachine.Wait:
-                TimerBar.gameObject.SetActive(true);
-                if (CurrentWaitTimer < WaitTime)
+            case StateMachine.Wait:
+                if (onPlant == true)
                 {
-                    CurrentWaitTimer += 1;
-                    TimerBar.value = (1 - (float)CurrentWaitTimer / (float)WaitTime);
+                    TimerBar.gameObject.SetActive(true);
+                    if (CurrentWaitTimer < WaitTime)
+                    {
+                        CurrentWaitTimer += 1;
+                        TimerBar.value = (1 - (float)CurrentWaitTimer / (float)WaitTime);
+                    }
+                    else
+                    {
+                        CurrentWaitTimer = 0;
+                        NextState();
+                    }
                 }
                 else
                 {
+                    CurrentState = StateMachine.WalkToFlower;
+                    SetRandomPlantToWalkTo();
+                    TimerBar.gameObject.SetActive(false);
                     CurrentWaitTimer = 0;
-                    NextState();
                 }
                 break;
-            case CustomerStateMachine.WalkToLine:
+            case StateMachine.WalkToLine:
                 MoveToPointYFirst(RegisterPoint + LineOffset);
                 WaitTime = 5000;
                 break;
-            case CustomerStateMachine.InLine:
+            case StateMachine.InLine:
                 TimerBar.gameObject.SetActive(true);
                 if (new Vector2(transform.position.x, transform.position.y) != RegisterPoint + LineOffset)
                 {
@@ -94,7 +110,7 @@ public class CustomerBehavior : MonoBehaviour
                     NextState();
                 }
                 break;
-            case CustomerStateMachine.Exit:
+            case StateMachine.Exit:
                 MoveToPointXFirst(StartPoint);
                 if (transform.position == new Vector3(StartPoint.x, StartPoint.y, 0))
                 {
@@ -105,6 +121,23 @@ public class CustomerBehavior : MonoBehaviour
 
     }
 
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.tag == "Plant")
+        {
+            onPlant = true;
+            PlantYouPick = collider.gameObject;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider.gameObject.tag == "Plant")
+        {
+            onPlant = false;
+        }
+    }
+
     public void OnDestroy()
     {
         EventManager.LineLeaveEvent -= ProgInLine;
@@ -113,29 +146,28 @@ public class CustomerBehavior : MonoBehaviour
 
     public void NextState()
     {
-        if (CurrentState == CustomerStateMachine.WalkToFlower)
+        if (CurrentState == StateMachine.WalkToFlower)
         {
-            CurrentState = CustomerStateMachine.Wait;
+            CurrentState = StateMachine.Wait;
         }
-        else if (CurrentState == CustomerStateMachine.WalkToLine)
+        else if (CurrentState == StateMachine.WalkToLine)
         {
-            CurrentState = CustomerStateMachine.InLine;
+            CurrentState = StateMachine.InLine;
         }
-        else if (CurrentState == CustomerStateMachine.Wait || CurrentState == CustomerStateMachine.InLine)
+        else if (CurrentState == StateMachine.Wait)
+        {
+            PlantYouPick.SetActive(false);
+            TimerBar.gameObject.SetActive(false);
+            EventManager.EnterLine();
+            CurrentCustomerNumber = LineManager.CustomerNumber;
+            LineOffset = new Vector2(0 - CurrentCustomerNumber, 0);
+            CurrentState = StateMachine.WalkToLine;
+        }
+        else if (CurrentState == StateMachine.InLine)
         {
             TimerBar.gameObject.SetActive(false);
-            if (transform.position.y != 0)
-            {
-                EventManager.EnterLine();
-                CurrentCustomerNumber = LineManager.CustomerNumber;
-                LineOffset = new Vector2(0 - CurrentCustomerNumber, 0);
-                CurrentState = CustomerStateMachine.WalkToLine;
-            }
-            else
-            {
-                EventManager.LeaveLine();
-                CurrentState = CustomerStateMachine.Exit;
-            }
+            EventManager.LeaveLine();
+            CurrentState = StateMachine.Exit;
         }
     }
 
@@ -181,7 +213,7 @@ public class CustomerBehavior : MonoBehaviour
 
     public void RegisterInteraction()
     {
-        if (CurrentState == CustomerStateMachine.InLine && CurrentCustomerNumber == 1)
+        if (CurrentState == StateMachine.InLine && CurrentCustomerNumber == 1)
         {
             NextState();
         }
@@ -195,8 +227,22 @@ public class CustomerBehavior : MonoBehaviour
 
     public void SetRandomPlantToWalkTo()
     {
-        GameObject RandPlant = Plants[Random.Range(0, Plants.Length)];
-        FlowerPoint = new Vector2(RandPlant.transform.position.x + PlantOffset.x, RandPlant.transform.position.y + PlantOffset.y);
+        if (Plants.Length == 0)
+        {
+            if (transform.position.x == StartPoint.x && transform.position.y == StartPoint.y)
+            {
+                SetRandomWalkToPoint();
+            }
+            else
+            {
+                CurrentState = StateMachine.Exit;
+            }
+        }
+        else
+        {
+            GameObject RandPlant = Plants[Random.Range(0, Plants.Length)];
+            FlowerPoint = new Vector2(RandPlant.transform.position.x + PlantOffset.x, RandPlant.transform.position.y + PlantOffset.y);
+        }
     }
 
     public void SetRandomWalkToPoint()
