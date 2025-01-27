@@ -4,14 +4,14 @@ using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CustomerBehaveior : MonoBehaviour
+public class CustomerBehavior : MonoBehaviour
 {
     Vector2 FlowerPoint;
     Vector2 StartPoint;
     Vector2 RegisterPoint;
-    public Vector2 LineOffset = new Vector2(0,0);
+    public Vector2 LineOffset = new Vector2(0, 0);
     [SerializeField] Slider TimerBar;
-    private float minX,minY,maxX,maxY;
+    private float minX, minY, maxX, maxY;
     public int CurrentWaitTimer = 0;
     public int WaitTime = 500;
     float step;
@@ -22,7 +22,7 @@ public class CustomerBehaveior : MonoBehaviour
     LineManagment LineManager;
     public int CurrentCustomerNumber = 0;
 
-    public enum StateMachine
+    public enum CustomerStateMachine
     {
         WalkToFlower,
         WalkToLine,
@@ -31,10 +31,8 @@ public class CustomerBehaveior : MonoBehaviour
         Exit
     }
 
-    public StateMachine CurrentState;
+    public CustomerStateMachine CurrentState;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         step = 4.0f * Time.deltaTime;
@@ -44,31 +42,30 @@ public class CustomerBehaveior : MonoBehaviour
         transform.position.Set(StartPoint.x, StartPoint.y, 0);
         SetMinMax();
 
-        //plants as fixed points
-        PlantOffset = new Vector2 (1, 0);
+        //Plants as fixed points
+        PlantOffset = new Vector2(1, 0);
         Plants = GameObject.FindGameObjectsWithTag("Plant");
         SetRandomPlantToWalkTo();
 
-        //line
+        //Line
         LineManager = GameObject.FindGameObjectWithTag("LineManager").GetComponent<LineManagment>();
         EventManager.LineLeaveEvent += ProgInLine;
         EventManager.RegisterRealeseEvent += RegisterInteraction;
     }
 
-    // Update is called once per frame
     void Update()
     {
         switch (CurrentState)
         {
-            case StateMachine.WalkToFlower:
+            case CustomerStateMachine.WalkToFlower:
                 MoveToPointXFirst(FlowerPoint);
                 break;
-            case StateMachine.Wait:
+            case CustomerStateMachine.Wait:
                 TimerBar.gameObject.SetActive(true);
                 if (CurrentWaitTimer < WaitTime)
                 {
                     CurrentWaitTimer += 1;
-                    TimerBar.value = (1-(float)CurrentWaitTimer / (float)WaitTime);
+                    TimerBar.value = (1 - (float)CurrentWaitTimer / (float)WaitTime);
                 }
                 else
                 {
@@ -76,13 +73,13 @@ public class CustomerBehaveior : MonoBehaviour
                     NextState();
                 }
                 break;
-            case StateMachine.WalkToLine:
-                MoveToPointYFirst(RegisterPoint+LineOffset);
+            case CustomerStateMachine.WalkToLine:
+                MoveToPointYFirst(RegisterPoint + LineOffset);
                 WaitTime = 5000;
                 break;
-            case StateMachine.InLine:
+            case CustomerStateMachine.InLine:
                 TimerBar.gameObject.SetActive(true);
-                if (new Vector2(transform.position.x,transform.position.y) != RegisterPoint + LineOffset)
+                if (new Vector2(transform.position.x, transform.position.y) != RegisterPoint + LineOffset)
                 {
                     MoveToPointYFirst(RegisterPoint + LineOffset);
                 }
@@ -97,7 +94,7 @@ public class CustomerBehaveior : MonoBehaviour
                     NextState();
                 }
                 break;
-            case StateMachine.Exit:
+            case CustomerStateMachine.Exit:
                 MoveToPointXFirst(StartPoint);
                 if (transform.position == new Vector3(StartPoint.x, StartPoint.y, 0))
                 {
@@ -116,28 +113,28 @@ public class CustomerBehaveior : MonoBehaviour
 
     public void NextState()
     {
-        if (CurrentState == StateMachine.WalkToFlower)
+        if (CurrentState == CustomerStateMachine.WalkToFlower)
         {
-            CurrentState = StateMachine.Wait;
+            CurrentState = CustomerStateMachine.Wait;
         }
-        else if (CurrentState == StateMachine.WalkToLine)
+        else if (CurrentState == CustomerStateMachine.WalkToLine)
         {
-            CurrentState = StateMachine.InLine;
+            CurrentState = CustomerStateMachine.InLine;
         }
-        else if (CurrentState == StateMachine.Wait || CurrentState == StateMachine.InLine)
+        else if (CurrentState == CustomerStateMachine.Wait || CurrentState == CustomerStateMachine.InLine)
         {
             TimerBar.gameObject.SetActive(false);
             if (transform.position.y != 0)
             {
                 EventManager.EnterLine();
                 CurrentCustomerNumber = LineManager.CustomerNumber;
-                LineOffset = new Vector2(0- CurrentCustomerNumber, 0);
-                CurrentState = StateMachine.WalkToLine;
+                LineOffset = new Vector2(0 - CurrentCustomerNumber, 0);
+                CurrentState = CustomerStateMachine.WalkToLine;
             }
             else
             {
                 EventManager.LeaveLine();
-                CurrentState = StateMachine.Exit;
+                CurrentState = CustomerStateMachine.Exit;
             }
         }
     }
@@ -184,7 +181,7 @@ public class CustomerBehaveior : MonoBehaviour
 
     public void RegisterInteraction()
     {
-        if (CurrentState == StateMachine.InLine && CurrentCustomerNumber == 1)
+        if (CurrentState == CustomerStateMachine.InLine && CurrentCustomerNumber == 1)
         {
             NextState();
         }

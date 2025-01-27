@@ -18,7 +18,6 @@ public class SpawnerScript : MonoBehaviour
         spawnTimer = Random.Range(minSpawnTime, maxSpawnTime);
     }
 
-    // Update is called once per frame
     void Update()
     {
         timer++;

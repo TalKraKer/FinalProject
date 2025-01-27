@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerBehavier : MonoBehaviour
+public class PlayerBehavior : MonoBehaviour
 {
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
@@ -11,14 +11,12 @@ public class PlayerBehavier : MonoBehaviour
 
     public bool onRegister;
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         onRegister = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         rb.velocity = moveSpeed * moveInput;
