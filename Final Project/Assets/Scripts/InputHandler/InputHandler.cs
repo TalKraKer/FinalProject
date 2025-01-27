@@ -15,8 +15,8 @@ public class InputHandler : MonoBehaviour
       //  GameStateManager.OnGameStateChange -= HandleGameStateChange;
     }
 
-    private void HandleGameStateChange(GameState newState)
-    {
+    //private void HandleGameStateChange(GameState newState)
+   // {
         //playerInput = GetComponent<PlayerInput>();
 
         //if (newState.stateName == "GameplayState")
@@ -31,5 +31,5 @@ public class InputHandler : MonoBehaviour
         //{
         //    playerInput.SwitchCurrentActionMap("UI");
         //}
-    }
+  //  }
 }
