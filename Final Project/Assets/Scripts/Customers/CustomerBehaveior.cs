@@ -226,7 +226,7 @@ public class CustomerBehaveior : MonoBehaviour
 
     public void SetRandomPlantToWalkTo()
     {
-        if (Plants.Length==0)
+        if (Plants.Length == 0)
         {
             if (transform.position.x == StartPoint.x && transform.position.y == StartPoint.y)
             {
@@ -237,11 +237,27 @@ public class CustomerBehaveior : MonoBehaviour
                 CurrentState = StateMachine.Exit;
             }
         }
-        else
+        else if (CheckPlants(Plants))
         {
             GameObject RandPlant = Plants[Random.Range(0, Plants.Length)];
             FlowerPoint = new Vector2(RandPlant.transform.position.x + PlantOffset.x, RandPlant.transform.position.y + PlantOffset.y);
         }
+        else
+        {
+            CurrentState = StateMachine.Exit;
+        }
+    }
+
+    public bool CheckPlants(GameObject[] Plants)
+    {
+        foreach (GameObject Plant in Plants)
+        {
+            if (Plant.activeSelf == true)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     public void SetRandomWalkToPoint()
