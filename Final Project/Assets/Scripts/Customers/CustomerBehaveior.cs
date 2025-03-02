@@ -42,8 +42,8 @@ public class CustomerBehaveior : MonoBehaviour
     {
         step = 4.0f * Time.deltaTime;
         TimerBar.gameObject.SetActive(false);
-        StartPoint = new Vector2(-11, 0);
-        RegisterPoint = new Vector2(10, 0);
+        StartPoint = new Vector2(11, -4.5f);
+        RegisterPoint = new Vector2(0, 1.3f);
         transform.position.Set(StartPoint.x, StartPoint.y, 0);
         SetMinMax();
 
@@ -220,8 +220,11 @@ public class CustomerBehaveior : MonoBehaviour
 
     public void ProgInLine()
     {
-        CurrentCustomerNumber -= 1;
-        LineOffset = new Vector2(LineOffset.x + 1, 0);
+        if (CurrentCustomerNumber > 1)
+        {
+            CurrentCustomerNumber -= 1;
+        }
+        LineOffset = new Vector2(0 - CurrentCustomerNumber, 0);
     }
 
     public void SetRandomPlantToWalkTo()
