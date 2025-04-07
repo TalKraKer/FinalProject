@@ -139,7 +139,7 @@
                     "name": "",
                     "id": "ce7dbd1d-b419-45aa-9151-d22fcee03183",
                     "path": "<Keyboard>/e",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "",
                     "action": "Interact",

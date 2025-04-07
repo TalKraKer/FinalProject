@@ -201,7 +201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8021570224898778272, guid: 12e7814fd9e03044a8b3fd1903c82769, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.965356
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8021570224898778272, guid: 12e7814fd9e03044a8b3fd1903c82769, type: 3}
       propertyPath: m_LocalRotation.w
@@ -858,6 +858,7 @@ GameObject:
   - component: {fileID: 1257502275}
   - component: {fileID: 1257502273}
   - component: {fileID: 1257502278}
+  - component: {fileID: 1257502279}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -878,10 +879,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  PlantHoldPos: {fileID: 1382375942}
   onRegister: 0
   onPlant: 0
   PlantYouAreOn: {fileID: 0}
-  PlantsYouAreHolding: []
+  PlantYouAreHolding: {fileID: 0}
 --- !u!50 &1257502275
 Rigidbody2D:
   serializedVersion: 4
@@ -950,17 +952,17 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f9522bf19deb9da4a9f15325966c7998, type: 3}
+  m_Sprite: {fileID: -1783107232, guid: 3033db87ae56b3241a3f4ee25c4d3eef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.2}
+  m_Size: {x: 2, y: 3.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!4 &1257502277
 Transform:
   m_ObjectHideFlags: 0
@@ -973,7 +975,8 @@ Transform:
   m_LocalPosition: {x: -6.48, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1382375943}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1257502278
@@ -1011,9 +1014,9 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1.25}
-    newSize: {x: 0.16, y: 0.2}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2, y: 3.5}
+    newSize: {x: 2, y: 3.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1021,6 +1024,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.25}
   m_EdgeRadius: 0
+--- !u!95 &1257502279
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257502272}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 91eb0168ecccce84d8c9cc2aa28ad2f7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1373351158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1083,6 +1107,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8021570224898778272, guid: 12e7814fd9e03044a8b3fd1903c82769, type: 3}
   m_PrefabInstance: {fileID: 1373351158}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1382375942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1382375943}
+  m_Layer: 0
+  m_Name: PlayerPlantHoldPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1382375943
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382375942}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.33, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1257502277}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1446329981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1734,7 +1789,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!4 &2121596738
 Transform:
   m_ObjectHideFlags: 0
@@ -1744,7 +1799,7 @@ Transform:
   m_GameObject: {fileID: 2121596736}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0041, y: 0.003, z: 5}
+  m_LocalPosition: {x: 0.0041, y: -6.05, z: 5}
   m_LocalScale: {x: 1.6705334, y: 1.7532899, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

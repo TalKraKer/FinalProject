@@ -9,18 +9,29 @@ public class PlayerBehaveior : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveInput;
 
+    Animator animator;
+
+    [SerializeField] GameObject PlantHoldPos;
+
     public bool onRegister;
     public bool onPlant;
     public GameObject PlantYouAreOn;
-    public List<GameObject> PlantsYouAreHolding;
+    public GameObject PlantYouAreHolding;
 
     // Start is called before the first frame update
     void Start()
     {
-        PlantsYouAreHolding = new List<GameObject>();
+        if (PlantHoldPos == null)
+        {
+            PlantHoldPos = GameObject.Find("PlayerPlantHoldPos");
+        }
+
+        PlantYouAreHolding = null;
         rb = GetComponent<Rigidbody2D>();
         onRegister = false;
         onPlant = false;
+
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -58,6 +69,14 @@ public class PlayerBehaveior : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
+        if (moveInput != Vector2.zero)
+        {
+            animator.SetBool("isWalking", true);
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
+        }
     }
 
     public void Interact(InputAction.CallbackContext context)
@@ -68,21 +87,23 @@ public class PlayerBehaveior : MonoBehaviour
             {
                 EventManager.RegisterRealese();
             }
-            else if (onPlant == true)
+            else if (PlantYouAreHolding == null)
             {
-                PlantsYouAreHolding.Add(PlantYouAreOn);
-                PlantYouAreOn.SetActive(false);
+                if (onPlant == true)
+                {
+                    PlantYouAreHolding = PlantYouAreOn;
+                    PlantYouAreHolding.GetComponent<PlantHolding>().FollowHolder(PlantHoldPos);
+                }
+                else
+                {
+                    //not on plant interaction
+                }
             }
             else
             {
-                float tempOffset = 0;
-                foreach (GameObject plant in PlantsYouAreHolding)
-                {
-                    plant.SetActive(true);
-                    plant.transform.position = new Vector3(transform.position.x, transform.position.y + tempOffset, transform.position.z);
-                    tempOffset += 0.5f;
-                }
-                PlantsYouAreHolding.Clear();
+                PlantYouAreHolding.transform.position = transform.position;
+                PlantYouAreHolding.GetComponent<PlantHolding>().StopFollowHolder();
+                PlantYouAreHolding = null;
             }
         }
     }
