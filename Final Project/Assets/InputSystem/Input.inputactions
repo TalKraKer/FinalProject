@@ -160,6 +160,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Replay",
+                    "type": "Value",
+                    "id": "7fc9cd07-63d1-4d09-83e3-9b6955546fe2",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -171,6 +180,17 @@
                     "processors": "",
                     "groups": ";Mouse",
                     "action": "Left Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "59726dd1-5b03-4c5c-8196-1b540dffbbd7",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Replay",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

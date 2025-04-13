@@ -11,10 +11,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Panels
   - Water
   - UI
-  - 
+  - Buttons
   - 
   - 
   - 
@@ -49,6 +49,9 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 1632706469
+    locked: 0
+  - name: Panels
+    uniqueID: 1432031885
     locked: 0
   - name: Buttons
     uniqueID: 3091090407
