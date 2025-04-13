@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -28,7 +25,6 @@ public class WaterManager : MonoBehaviour
 
         UpdateWaterUI();
    //     WaterChangedEvent?.Invoke(WaterScore);
-
     }
 
     public void IncreaseHealth()
@@ -54,8 +50,4 @@ public class WaterManager : MonoBehaviour
             water[i].sprite = (i < WaterScore) ? fullDrop : emptyDrop;
         }
     }
-
-
-
-
 }

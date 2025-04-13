@@ -7,6 +7,7 @@ TagManager:
   - Plant
   - LineManager
   - Register
+  - NPC
   layers:
   - Default
   - TransparentFX
@@ -52,4 +53,10 @@ TagManager:
     locked: 0
   - name: Buttons
     uniqueID: 3091090407
+    locked: 0
+  - name: Player&NPC
+    uniqueID: 2718262511
+    locked: 0
+  - name: Plant requirements
+    uniqueID: 326892143
     locked: 0

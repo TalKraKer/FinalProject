@@ -1,13 +1,11 @@
-iokusing System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CashRegister : MonoBehaviour
 {
-
     private bool playerInZone = false;
     private bool npcInZone = false;
     public DialogueManager dialogueManager;
+    public NPC_SO[] NPCToTalkTo;
 
     void Start()
     {
@@ -23,8 +21,8 @@ public class CashRegister : MonoBehaviour
         if (other.CompareTag("NPC"))
             npcInZone = true;
 
-        if (playerInZone && npcInZone)
-            dialogueManager.StartDialogue();
+       // if (playerInZone && npcInZone)
+       //     DialogueManager.Instance.StartDialogue(NPCToTalkTo);
     }
 
     void OnTriggerExit2D(Collider2D other)

@@ -1,24 +1,26 @@
 using UnityEngine;
-using UnityEngine.UI;
-using System.Collections.Generic;
+using System;
 
 public class DialogueManager : MonoBehaviour
 {
-    public Text dialogueText;
-    public GameObject dialogueBubble;
+    public static DialogueManager Instance;
+    public event Action<PlayerSO> OnDialogueStart;
     public PlayerSO[] playerSO;
 
     void Start()
     {
-        dialogueBubble.SetActive(false);
+       // dialogueUI.DisplayDialogue(playerSO[0]);
     }
 
-    public void StartDialogue( )
+    private void Awake()
     {
-        Debug.Log("Start");
-        dialogueBubble.SetActive(true);
-
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
     }
 
-
+    public void StartDialogue(PlayerSO player)
+    {
+        Debug.Log("Starting dialogue with: " + player.playerName);
+        OnDialogueStart?.Invoke(player);
+    }
 }
