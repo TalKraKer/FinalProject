@@ -1776,7 +1776,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1257502273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1917,10 +1917,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.025191218, y: -0.06297779}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1931,7 +1931,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.25}
+  m_Size: {x: 1.3190875, y: 1.3759556}
   m_EdgeRadius: 0
 --- !u!1001 &1373351158
 PrefabInstance:
@@ -2279,7 +2279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSO:
-  - {fileID: 11400000, guid: 4fde3f4cc3e70b945b0ab8f9b7c8f538, type: 2}
+  - {fileID: 11400000, guid: 475f5aa10abcc8e429da87fa91703d6e, type: 2}
   - {fileID: 11400000, guid: 8f86d940cb3954b4d97dc7e3bc80848b, type: 2}
   - {fileID: 11400000, guid: b75023bfeb1a63a4188a0a44626b57e2, type: 2}
   - {fileID: 11400000, guid: 86fc99b1b5750d94cadc9b64c38f7ce8, type: 2}
