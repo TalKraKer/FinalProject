@@ -7,34 +7,39 @@ using UnityEngine.SceneManagement;
 public class MainMenuManager : MonoBehaviour
 {
     [SerializeField] GameObject generalPanel;
-    public TextMeshPro panelTitleText;
-    public TextMeshPro panelBodyText;
+    [SerializeField] GameObject selectPlayerPanel;
 
+    public TextMeshProUGUI panelTitleText;
+    public TextMeshProUGUI panelBodyText;
+    
     [SerializeField] Button settingsButton;
     [SerializeField] Button creditsButton;
     [SerializeField] Button helpButton;
     [SerializeField] Button quitButton;
     [SerializeField] Button cancelButton;
 
-    void Start()
-    {
-        //Scene storeScene = SceneManager.GetActiveScene();
-        //if (button != null)
-        //{
-        //    button.onClick.AddListener(() => panel.SetActive(false));
-
-        //}
-        //else
-        //{
-        //    Debug.LogError("Button not assigned in the inspector.");
-        //}
-
-    }
+    public GameObject malePlayerPrefab;
+    public GameObject femalePlayerPrefab;
 
     public void OnPlayClicked()
     {
-        Debug.Log("Play button clicked");
-        Time.timeScale = 1f;
+        Debug.Log("Play Button clicked");
+        selectPlayerPanel.SetActive(true);
+    }
+
+    public void OnMaleSelected()
+    {
+        Debug.Log("Male button clicked");
+        Time.timeScale = 2f;
+        PlayerSelector.selectedPlayer = malePlayerPrefab;
+        SceneManager.LoadScene("Store");
+    }
+
+    public void OnFemaleSelected()
+    {
+        Debug.Log("Female button clicked");
+        Time.timeScale = 2f;
+        PlayerSelector.selectedPlayer = femalePlayerPrefab;
         SceneManager.LoadScene("Store");
     }
 
@@ -42,6 +47,8 @@ public class MainMenuManager : MonoBehaviour
     {
         cancelButton.gameObject.SetActive(true);
         generalPanel.SetActive(true);
+
+        Debug.Log(type);
 
         switch (type)
         {
@@ -51,11 +58,18 @@ public class MainMenuManager : MonoBehaviour
                 break;
             case "Credits":
                 panelTitleText.text = "Credits";
-                panelBodyText.text = "Mentor: Ella Luna Pleasance Programmers:Fany Manevich, Amir Melicson Animators: Tal Kerklies, Yarin Peled";
+                panelBodyText.text = "Mentor: " +
+                    "       Ella Luna Pleasance" +
+                    " Programmers:" +
+                    "       Fany Manevich, Amir Melicson " +
+                    "Animators:" +
+                    "       Tal Kerklies, Yarin Peled";
                 break;
             case "Help":
                 panelTitleText.text = "Help";
-                panelBodyText.text = "--------";
+                panelBodyText.text = "Choose player." +
+                    "Move with arrows or WSDA. " +
+                    "Help the customers choose the plant of there dreams.";
                 break;
             default:
                 panelTitleText.text = "Panel not working";
