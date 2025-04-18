@@ -1,0 +1,642 @@
+fileFormatVersion: 2
+guid: 1c213a56cc5012443a194bb3802d9474
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShoshWalkBack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 592
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77c0729c1c02364fb69eb55b8ff1d54
+      internalID: 1366963373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_1
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 592
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d3e932cd54761429b5b0e8517317df
+      internalID: 1559481295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_2
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 592
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c11db3b29b5f654a8ac2cda2c36daa0
+      internalID: 1726118234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_3
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 592
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34448456b0c43b46bc1ede42ae405ee
+      internalID: -672390615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_4
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 592
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab80d5e5780b0674194d17b2b77191b8
+      internalID: 1711667355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_5
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 592
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f55a217664cbc5409f8c9dfc0269494
+      internalID: -605018638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_6
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 592
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8213ae9d5620d24eac7ce47dabf802c
+      internalID: 1118236965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_7
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 592
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddc09ba17d9a72449dcc8f4db88f75e
+      internalID: -2027056243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_8
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 592
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea8d92983e670b40b6fae57073fc6fd
+      internalID: -635250684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 342
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20c9b296b6d0a743a19d5c78a7f7595
+      internalID: -378503469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_10
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 342
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8a823d692f23a42ab25b90984a477a
+      internalID: -1490399131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_11
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 342
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f8996ff1abdde40ac52004eb1d070f
+      internalID: -1138698356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_12
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 342
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642659b64500e5d40aa6d532d2c290f2
+      internalID: -159393241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_13
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 342
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bbe4dbeec47dc140839b94008f649f8
+      internalID: -1547209257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_14
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 342
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd61b9fb13702be4394314b09ebcb0c2
+      internalID: -1009601653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_15
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 342
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f59942f5830e84d9f7ec71e6d5d1b3
+      internalID: 801338241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_16
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 342
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416cf0a10d3e20b44bf56f7153ad4279
+      internalID: -1356644219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_17
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 342
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4397a2749a49d47a864fef73bdf320
+      internalID: 307180754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 92
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3a46db0413bb249befe7c866f549c3
+      internalID: -1737112009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_19
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 92
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a5242187f80a54196923d7ee10fb2c
+      internalID: 1740923898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_20
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 92
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c180d26ceb48db4e86c6d7574987ba8
+      internalID: -554930232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_21
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 92
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb5f03d5878dda43aa339bb2a1d05ee
+      internalID: -353247523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_22
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 92
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a96bd46081d5f4984fc11046192027
+      internalID: -284612322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkBack_23
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 92
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11171d6891c0e604b89b1fd36a0c692a
+      internalID: 782059733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ShoshWalkBack_0: 1366963373
+      ShoshWalkBack_1: 1559481295
+      ShoshWalkBack_10: -1490399131
+      ShoshWalkBack_11: -1138698356
+      ShoshWalkBack_12: -159393241
+      ShoshWalkBack_13: -1547209257
+      ShoshWalkBack_14: -1009601653
+      ShoshWalkBack_15: 801338241
+      ShoshWalkBack_16: -1356644219
+      ShoshWalkBack_17: 307180754
+      ShoshWalkBack_18: -1737112009
+      ShoshWalkBack_19: 1740923898
+      ShoshWalkBack_2: 1726118234
+      ShoshWalkBack_20: -554930232
+      ShoshWalkBack_21: -353247523
+      ShoshWalkBack_22: -284612322
+      ShoshWalkBack_23: 782059733
+      ShoshWalkBack_3: -672390615
+      ShoshWalkBack_4: 1711667355
+      ShoshWalkBack_5: -605018638
+      ShoshWalkBack_6: 1118236965
+      ShoshWalkBack_7: -2027056243
+      ShoshWalkBack_8: -635250684
+      ShoshWalkBack_9: -378503469
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

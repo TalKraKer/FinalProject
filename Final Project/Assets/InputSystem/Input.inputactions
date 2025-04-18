@@ -160,6 +160,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Book",
+                    "type": "Button",
+                    "id": "5944f95d-bf91-4ade-8532-59b01ca3acd7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -171,6 +180,17 @@
                     "processors": "",
                     "groups": ";Mouse",
                     "action": "Left Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "749dc989-9ea0-40ff-9da5-e37a7ea35409",
+                    "path": "<Keyboard>/b",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Book",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

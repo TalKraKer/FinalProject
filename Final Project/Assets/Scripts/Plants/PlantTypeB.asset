@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f4d3940bda8b8b44b25e9c5e6341b2a, type: 3}
-  m_Name: PlantDetailsTypeA
+  m_Name: PlantTypeB
   m_EditorClassIdentifier: 
-  Price: 100
-  NeededWater: 1
+  Price: 250
+  NeededWater: 3
   NeededShade: 1
   Level: 1
-  Icon: {fileID: -1743921778, guid: 2c733311ecb86194592bce92a0ecf9bf, type: 3}
+  Icon: {fileID: 21300000, guid: f777398dc8ec51349a21edbb3f77ebfd, type: 3}

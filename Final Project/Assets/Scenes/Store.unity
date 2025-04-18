@@ -382,7 +382,7 @@ Transform:
   m_GameObject: {fileID: 164030678}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.3, z: 0}
+  m_LocalPosition: {x: -0.31, y: 1.35, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -817,6 +817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  moveInput: {x: 0, y: 0}
   PlantHoldPos: {fileID: 1382375942}
   onRegister: 0
   onPlant: 0
@@ -824,6 +825,8 @@ MonoBehaviour:
   RestockStation: {fileID: 0}
   PlantYouAreOn: {fileID: 0}
   PlantYouAreHolding: {fileID: 0}
+  isSide: 0
+  isBack: 0
 --- !u!50 &1257502275
 Rigidbody2D:
   serializedVersion: 4
@@ -999,11 +1002,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8021570224898778272, guid: 12e7814fd9e03044a8b3fd1903c82769, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.14
+      value: -2.81
       objectReference: {fileID: 0}
     - target: {fileID: 8021570224898778272, guid: 12e7814fd9e03044a8b3fd1903c82769, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.7
+      value: -1.77
       objectReference: {fileID: 0}
     - target: {fileID: 8021570224898778272, guid: 12e7814fd9e03044a8b3fd1903c82769, type: 3}
       propertyPath: m_LocalPosition.z

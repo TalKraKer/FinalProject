@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName = "PlantDetailsSO",menuName = "plant",order =1)]
-public class PlantD : ScriptableObject
+[CreateAssetMenu(fileName = "PlantDetailsSO",menuName = "plantSO",order =1)]
+public class PlantSO : ScriptableObject
 {
-    [SerializeField] int Price;
-    [SerializeField] int NeededWater;
-    [SerializeField] int NeededShade;
-    [SerializeField] int Level;
-    [SerializeField] Sprite Icon;
+    public int Price;
+    public int NeededWater;
+    public int NeededShade;
+    public int Level;
+    public Sprite Icon;
 }

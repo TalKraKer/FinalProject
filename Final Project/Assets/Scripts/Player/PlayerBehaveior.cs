@@ -7,7 +7,7 @@ public class PlayerBehaveior : MonoBehaviour
 {
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
-    private Vector2 moveInput;
+    public Vector2 moveInput;
 
     Animator animator;
 
@@ -19,6 +19,9 @@ public class PlayerBehaveior : MonoBehaviour
     public GameObject RestockStation;
     public GameObject PlantYouAreOn;
     public GameObject PlantYouAreHolding;
+
+    public bool isSide;
+    public bool isBack;
 
     // Start is called before the first frame update
     void Start()
@@ -87,6 +90,20 @@ public class PlayerBehaveior : MonoBehaviour
         if (moveInput != Vector2.zero)
         {
             animator.SetBool("isWalking", true);
+            if(moveInput.x!=0)
+            {
+                animator.SetBool("isSideWalking", true);
+                animator.SetBool("backWalking", false);
+            }else if (moveInput.y > 0)
+            {
+                animator.SetBool("isSideWalking", false);
+                animator.SetBool("backWalking", true);
+            }
+            else
+            {
+                animator.SetBool("isSideWalking", false);
+                animator.SetBool("backWalking", false);
+            }
         }
         else
         {
