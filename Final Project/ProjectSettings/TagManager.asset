@@ -63,3 +63,6 @@ TagManager:
   - name: Plant requirements
     uniqueID: 326892143
     locked: 0
+  - name: Plants
+    uniqueID: 2817504327
+    locked: 0

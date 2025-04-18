@@ -14,7 +14,6 @@ public class PlayerBehaveior : MonoBehaviour
     public GameObject PlantYouAreOn;
     public List<GameObject> PlantsYouAreHolding;
 
-    // Start is called before the first frame update
     void Start()
     {
         PlantsYouAreHolding = new List<GameObject>();
@@ -23,8 +22,7 @@ public class PlayerBehaveior : MonoBehaviour
         onPlant = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         rb.velocity = moveSpeed * moveInput;
     }
@@ -58,6 +56,7 @@ public class PlayerBehaveior : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
+        Debug.Log("Move input: " + moveInput);
     }
 
     public void Interact(InputAction.CallbackContext context)
