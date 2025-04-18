@@ -1,0 +1,1016 @@
+fileFormatVersion: 2
+guid: 075476e7f63c15240a3513274f3ff748
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boris_Side_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1216
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ecc5cbf7f1ae742bdd8aaa0ed02129
+      internalID: -541518644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1216
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 501b30d2ee0cdb745bf981d0b233b525
+      internalID: -1641218187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_2
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1216
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06660927778f364eae40ed631b3a559
+      internalID: 51714193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_3
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1216
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58dc1a1bf9670804abae38dd3a78d038
+      internalID: 1278840431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_4
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1216
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3757355095722a4ba9612adc0f2f367
+      internalID: 1605540080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_5
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1216
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1dc9b71ee4b69c4992dea18b1955741
+      internalID: 497060315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_6
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1216
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324aaac72904ccc4db8b77e9eb5a7e74
+      internalID: -696732606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_7
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 1216
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c642cf18a638f194db58ba9ce770fd83
+      internalID: 2065279161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_8
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1216
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791b931a9d03bd249b21d7d4e6651bba
+      internalID: -242712903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_9
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 1216
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a2015d2663b7d42acf9c485100c3a7
+      internalID: 915664904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 926
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b03cf25c4a8754ba58448406180f2c
+      internalID: -1433203406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_11
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 926
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0baf4b20266c388419178a415b3ff966
+      internalID: 1773712266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_12
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 926
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339894e081aa7c74581f7c165ac08436
+      internalID: -477965397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_13
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 926
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2954e080e09bf44a7b4e2ff499d4e1
+      internalID: -749983448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_14
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 926
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f6bec5cb90ecc4fafc99f9ba502652
+      internalID: -902974170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_15
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 926
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d27d0de81036fc47afe8bea736662ac
+      internalID: 820786860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_16
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 926
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c05d88413568f49a9054f17b2845fb
+      internalID: -702168846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_17
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 926
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9031fb86edb7ec24ebf37599a229defc
+      internalID: 923373175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_18
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 926
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c01a4ffd097f5d4a86e7024ec47525f
+      internalID: 1265410311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_19
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 926
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b0b308de1ef2247b37031dab4d2c61
+      internalID: -1237378206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 636
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c750759a3195d8741adb62136de585f1
+      internalID: 773090204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_21
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 636
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a237f737e87464388b1e9bc74a89de
+      internalID: 1471141113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_22
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 636
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c448673aa0dd8a45aae634d258e209b
+      internalID: 2136145104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_23
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 636
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4c900ce0b578a40bf446c67e0a1d92
+      internalID: 1263126669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_24
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 636
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7a693fc90661e4394991d607e72846
+      internalID: -2084965677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_25
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 636
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12c33b46682138458f26043eb1c3468
+      internalID: -1644712557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_26
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 636
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082b747d9df4a584498a0215130da19a
+      internalID: 81478124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_27
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 636
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a7045f74aa14845a5ba1eb25248c7a
+      internalID: -825002633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_28
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 636
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10a29815c37529443816480543248272
+      internalID: 1605367506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_29
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 636
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485c8a8031bdfeb4c8f042415a8985b2
+      internalID: 256803630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 346
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75030990db981f4388adf612d8a61dc
+      internalID: -772904718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_31
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 346
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3dd3c78d43574748b0e4109aa720026
+      internalID: 1756983404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_32
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 346
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2495bf819b28b4c9fc28ccdb27588c
+      internalID: 560787772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_33
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 346
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bb3a5c48a15c7429f7aeb871b006c5
+      internalID: 710478122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_34
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 346
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d747a6a2e945e4eb32b73ad63b550c
+      internalID: 28448101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_35
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 346
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2f802e1d5649f409eadef9c019c485
+      internalID: 16434103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_36
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 346
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544149e6dfef5ab41a6eb8afc55d5721
+      internalID: -1330102443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_37
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 346
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8c94228fe17d443b9b4717071d6674
+      internalID: -1579614317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_38
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 346
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd0c8ec1c4586c4dbe92f062faeb669
+      internalID: -392728308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_39
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 346
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8f5a20779554e4086c40462a954c66
+      internalID: 1679639022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Side_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 190
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8576b802d680c3849a52d9836d537083
+      internalID: 1349922062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Boris_Side_0: -541518644
+      Boris_Side_1: -1641218187
+      Boris_Side_10: -1433203406
+      Boris_Side_11: 1773712266
+      Boris_Side_12: -477965397
+      Boris_Side_13: -749983448
+      Boris_Side_14: -902974170
+      Boris_Side_15: 820786860
+      Boris_Side_16: -702168846
+      Boris_Side_17: 923373175
+      Boris_Side_18: 1265410311
+      Boris_Side_19: -1237378206
+      Boris_Side_2: 51714193
+      Boris_Side_20: 773090204
+      Boris_Side_21: 1471141113
+      Boris_Side_22: 2136145104
+      Boris_Side_23: 1263126669
+      Boris_Side_24: -2084965677
+      Boris_Side_25: -1644712557
+      Boris_Side_26: 81478124
+      Boris_Side_27: -825002633
+      Boris_Side_28: 1605367506
+      Boris_Side_29: 256803630
+      Boris_Side_3: 1278840431
+      Boris_Side_30: -772904718
+      Boris_Side_31: 1756983404
+      Boris_Side_32: 560787772
+      Boris_Side_33: 710478122
+      Boris_Side_34: 28448101
+      Boris_Side_35: 16434103
+      Boris_Side_36: -1330102443
+      Boris_Side_37: -1579614317
+      Boris_Side_38: -392728308
+      Boris_Side_39: 1679639022
+      Boris_Side_4: 1605540080
+      Boris_Side_40: 1349922062
+      Boris_Side_5: 497060315
+      Boris_Side_6: -696732606
+      Boris_Side_7: 2065279161
+      Boris_Side_8: -242712903
+      Boris_Side_9: 915664904
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
