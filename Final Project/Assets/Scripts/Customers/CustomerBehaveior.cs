@@ -11,6 +11,7 @@ public class CustomerBehaveior : MonoBehaviour
     Vector2 RegisterPoint;
     public Vector2 LineOffset = new Vector2(0,0);
     [SerializeField] Slider TimerBar;
+    [SerializeField] GameObject PlantHoldPos;
     private float minX,minY,maxX,maxY;
     public int CurrentWaitTimer = 0;
     public int WaitTime = 500;
@@ -20,6 +21,7 @@ public class CustomerBehaveior : MonoBehaviour
     public GameObject[] Plants;
 
     bool onPlant;
+    GameObject PlantYouOn;
     GameObject PlantYouPick;
 
     LineManagment LineManager;
@@ -114,6 +116,8 @@ public class CustomerBehaveior : MonoBehaviour
                 MoveToPointXFirst(StartPoint);
                 if (transform.position == new Vector3(StartPoint.x, StartPoint.y, 0))
                 {
+                    PlantYouPick.GetComponent<PlantHolding>().StopFollowHolder();
+                    PlantYouPick.SetActive(false);
                     Destroy(this.gameObject);
                 }
                 break;
@@ -126,7 +130,7 @@ public class CustomerBehaveior : MonoBehaviour
         if (collider.gameObject.tag == "Plant")
         {
             onPlant = true;
-            PlantYouPick = collider.gameObject;
+            PlantYouOn = collider.gameObject;
         }
     }
 
@@ -135,6 +139,7 @@ public class CustomerBehaveior : MonoBehaviour
         if (collider.gameObject.tag == "Plant")
         {
             onPlant = false;
+            PlantYouOn = null;
         }
     }
 
@@ -156,11 +161,12 @@ public class CustomerBehaveior : MonoBehaviour
         }
         else if (CurrentState == StateMachine.Wait)
         {
-            PlantYouPick.SetActive(false);
             TimerBar.gameObject.SetActive(false);
             EventManager.EnterLine();
             CurrentCustomerNumber = LineManager.CustomerNumber;
             LineOffset = new Vector2(0- CurrentCustomerNumber, 0);
+            PlantYouPick = PlantYouOn;
+            PlantYouPick.GetComponent<PlantHolding>().FollowHolder(PlantHoldPos);
             CurrentState = StateMachine.WalkToLine;
         }else if (CurrentState == StateMachine.InLine)
         {

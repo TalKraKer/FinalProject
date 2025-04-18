@@ -15,6 +15,8 @@ public class PlayerBehaveior : MonoBehaviour
 
     public bool onRegister;
     public bool onPlant;
+    public bool onRestock;
+    public GameObject RestockStation;
     public GameObject PlantYouAreOn;
     public GameObject PlantYouAreHolding;
 
@@ -46,12 +48,18 @@ public class PlayerBehaveior : MonoBehaviour
         {
             onRegister = true;
         }
+        else if (collider.gameObject.tag == "Restock")
+        {
+            onRestock = true;
+            RestockStation = collider.gameObject;
+        }
         else if (collider.gameObject.tag == "Plant")
         {
             onPlant = true;
             PlantYouAreOn = collider.gameObject;
         }
         
+
     }
 
     private void OnTriggerExit2D(Collider2D collider)
@@ -59,11 +67,18 @@ public class PlayerBehaveior : MonoBehaviour
         if (collider.gameObject.name == "CashRegister")
         {
             onRegister = false;
-        }else if (collider.gameObject.tag == "Plant")
+        }
+        else if (collider.gameObject.tag == "Restock")
+        {
+            onRestock = false;
+            RestockStation = null;
+        }
+        else if (collider.gameObject.tag == "Plant")
         {
             onPlant = false;
             PlantYouAreOn = null;
         }
+        
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -96,7 +111,10 @@ public class PlayerBehaveior : MonoBehaviour
                 }
                 else
                 {
-                    //not on plant interaction
+                    if (onRestock)
+                    {
+                        RestockStation.GetComponent<PlantRestock>().restock();
+                    }
                 }
             }
             else

@@ -1,17 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.WSA;
 
 public class PlantHolding : MonoBehaviour
 {
-    bool follow = false;
+    public bool follow = false;
     public GameObject holder = null;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -31,5 +27,6 @@ public class PlantHolding : MonoBehaviour
     public void StopFollowHolder()
     {
         follow = false;
+        holder = null;
     }
 }
