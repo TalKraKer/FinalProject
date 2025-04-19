@@ -212,8 +212,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputChannel: {fileID: 11400000, guid: 4a1efbee397abe346a3d78fa08d70b89, type: 2}
-  leftWall: {fileID: 0}
-  rightWall: {fileID: 0}
-  bottomWall: {fileID: 0}
-  topWall: {fileID: 0}
   moveSpeed: 5
