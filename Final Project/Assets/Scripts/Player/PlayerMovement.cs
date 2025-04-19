@@ -5,10 +5,10 @@ public class PlayerMovement : MonoBehaviour
 {
     public InputChannel inputChannel;
 
-    public Transform leftWall;
-    public Transform rightWall;
-    public Transform bottomWall;
-    public Transform topWall;
+   // public Transform leftWall;
+   // public Transform rightWall;
+ //   public Transform bottomWall;
+   // public Transform topWall;
 
     public float moveSpeed = 5f;
 
@@ -33,10 +33,10 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.velocity = moveSpeed * moveInput;
 
-        Vector2 clampedPos = transform.position;
-        clampedPos.x = Mathf.Clamp(clampedPos.x, leftWall.position.x, rightWall.position.x);
-        clampedPos.y = Mathf.Clamp(clampedPos.y, bottomWall.position.y, topWall.position.y);
-        transform.position = clampedPos;
+       // Vector2 clampedPos = transform.position;
+       // clampedPos.x = Mathf.Clamp(clampedPos.x, leftWall.position.x, rightWall.position.x);
+       // clampedPos.y = Mathf.Clamp(clampedPos.y, bottomWall.position.y, topWall.position.y);
+       // transform.position = clampedPos;
     }
 
     public void OnMove(Vector2 input)
