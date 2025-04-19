@@ -1412,9 +1412,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 861082034}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NPC
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1695,7 +1695,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1055391141}
   - component: {fileID: 1055391140}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CustomerSpawner
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -3119,9 +3119,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1983748427}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlayerSpawn
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
