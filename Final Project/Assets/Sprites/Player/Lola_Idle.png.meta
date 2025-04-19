@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: 0aa02fd9b6087bd43ab46cb6dd183733
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lola_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1688
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089a976824f29f948933481f88424ee6
+      internalID: 1020135890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1688
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4afb5d21f2a5a24ea028ec363aa9fd2
+      internalID: 83100450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1688
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdfea8a8688ae5c4e838381677f5c1c3
+      internalID: 2102695755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1688
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa1e2bb2a67f6546ab891d5b10643da
+      internalID: -702862987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1688
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0db0ab5d845b214f9932302510169df
+      internalID: 246464719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1688
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6d03465a904644e950b9c9c6acbe6b
+      internalID: 1830983745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1688
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440adfa59e621cf419fceab1f3d1c7f4
+      internalID: -1139232265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1688
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472307e01864f57478ada526e5dbd2d3
+      internalID: 766245552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1688
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b7ca556ff26724eb1792fba7c6c91e
+      internalID: -955418997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1688
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71575ca39ac650a429c5c9ef7393d9fe
+      internalID: -1512483617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1328
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef8629e0a03b0641afa06c7ba624e54
+      internalID: 467992774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1328
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5be08852032b05458bfffcf1f0a38a4
+      internalID: 124219203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1328
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f768421f6c7b7244491bb9f6ea8fab44
+      internalID: 1157226831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1328
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1194754f63b5ad64d811045f71a40d43
+      internalID: -1565088275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1328
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef18a996e8adbf44180ded2147a683db
+      internalID: 332262081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1328
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b31cf5f8000594ca7346200628cea7
+      internalID: 1043622839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_16
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1328
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02430950edd1ea429292a7d822dd4f2
+      internalID: 531355605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_17
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1328
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b84d8ba53d576b4fa84b026bb2c545e
+      internalID: -2080353067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_18
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1328
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf28146ce49f624ba15b7078659a889
+      internalID: -962208518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_19
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1328
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c777015a52fbf4cbfe5be878c2d488
+      internalID: 804085542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 968
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cacecb74f86e4d84699b2255c71ea8fb
+      internalID: 335808369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_21
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 968
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b654896db0cef40886ce2aee969e3f
+      internalID: -1819723496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_22
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 968
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65acda4bafc76f4c83d6133c87a44f7
+      internalID: -1223537132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_23
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 968
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb17b369bb2fa647ac8f2944ffd39ba
+      internalID: -1815774733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_24
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 968
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8b5bb1e78254e4d8933273db44d181
+      internalID: -59903293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_25
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 968
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25672dec8a0cf9439446d227bfdcafe
+      internalID: -745571536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_26
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 968
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff294fefc6b0c54699da59c7aea2a86
+      internalID: -525480924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_27
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 968
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60be9f9a81745e1448b003b5c11bd7b8
+      internalID: 976476174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_28
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 968
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1c41daa7b839e4588f1663a95385fd
+      internalID: -223184292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_29
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 968
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd9771b0a3e9af4e8883f0fe89b7254
+      internalID: 1137373628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 608
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa34153c36291f429ed8328909c19fd
+      internalID: 1368849953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 608
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cc3593de561c64ba6d70e8a3226741
+      internalID: -261031864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_32
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 608
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd6a34c7ce83294fa89a5a67a514079
+      internalID: 1514928844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_33
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 608
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aba98ac79c7e8b4f850a3b1494c28f3
+      internalID: 1481578844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_34
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 608
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8a55d8688ebdb4dadf67f5b40cebad
+      internalID: -2041125566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_35
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 608
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17f9393c971ce6439579eb6e9d47c13
+      internalID: 1115741375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_36
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 608
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a30d77a26f36114d994de9b4b67819a
+      internalID: -1573487211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_37
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 608
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6caee3f29ae0f284b886c36b04f0a787
+      internalID: 682765808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_38
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 608
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec796cdeb81e8f4428c409c5997b99df
+      internalID: 1905640710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_39
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 608
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff82072cd60dfe469ff84e1b4102974
+      internalID: -955337687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 248
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 383fd54ddfc9e604fbb4661f9a23457b
+      internalID: -1595207200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_41
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 248
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3eca33dd1ebe548bb7e3df11c2d130
+      internalID: -558133083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_42
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 248
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac64a89bbdb75094f96935defc7e51a0
+      internalID: 1875972829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_43
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 248
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ffa23776052fb642ab1ba6e2d3b3aba
+      internalID: -1254676044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_44
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 248
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c65fd0c6afc6db4283b0a7cedba4d92
+      internalID: 561520476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_45
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 248
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34a44387b6c50e4ebe2f8bf49d06d05
+      internalID: -886102692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_46
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 248
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af64b97d9170e145a42fb0cd44c642a
+      internalID: 1773478338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Idle_47
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 248
+        width: 200
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17aa84257faf1c54db2e81dd2e9a3e0d
+      internalID: -1966529391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Lola_Idle_0: 1020135890
+      Lola_Idle_1: 83100450
+      Lola_Idle_10: 467992774
+      Lola_Idle_11: 124219203
+      Lola_Idle_12: 1157226831
+      Lola_Idle_13: -1565088275
+      Lola_Idle_14: 332262081
+      Lola_Idle_15: 1043622839
+      Lola_Idle_16: 531355605
+      Lola_Idle_17: -2080353067
+      Lola_Idle_18: -962208518
+      Lola_Idle_19: 804085542
+      Lola_Idle_2: 2102695755
+      Lola_Idle_20: 335808369
+      Lola_Idle_21: -1819723496
+      Lola_Idle_22: -1223537132
+      Lola_Idle_23: -1815774733
+      Lola_Idle_24: -59903293
+      Lola_Idle_25: -745571536
+      Lola_Idle_26: -525480924
+      Lola_Idle_27: 976476174
+      Lola_Idle_28: -223184292
+      Lola_Idle_29: 1137373628
+      Lola_Idle_3: -702862987
+      Lola_Idle_30: 1368849953
+      Lola_Idle_31: -261031864
+      Lola_Idle_32: 1514928844
+      Lola_Idle_33: 1481578844
+      Lola_Idle_34: -2041125566
+      Lola_Idle_35: 1115741375
+      Lola_Idle_36: -1573487211
+      Lola_Idle_37: 682765808
+      Lola_Idle_38: 1905640710
+      Lola_Idle_39: -955337687
+      Lola_Idle_4: 246464719
+      Lola_Idle_40: -1595207200
+      Lola_Idle_41: -558133083
+      Lola_Idle_42: 1875972829
+      Lola_Idle_43: -1254676044
+      Lola_Idle_44: 561520476
+      Lola_Idle_45: -886102692
+      Lola_Idle_46: 1773478338
+      Lola_Idle_47: -1966529391
+      Lola_Idle_5: 1830983745
+      Lola_Idle_6: -1139232265
+      Lola_Idle_7: 766245552
+      Lola_Idle_8: -955418997
+      Lola_Idle_9: -1512483617
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
