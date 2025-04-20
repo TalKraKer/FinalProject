@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnerScript : MonoBehaviour
+public class NPCSpawnerScript : MonoBehaviour
 {
 
     public GameObject CustomerPrefab;

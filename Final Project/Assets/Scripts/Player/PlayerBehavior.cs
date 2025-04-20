@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerBehaveior : MonoBehaviour
+public class PlayerBehavior : MonoBehaviour
 {
+    public PlayerSO playerData;
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
     private Vector2 moveInput;
@@ -37,8 +38,7 @@ public class PlayerBehaveior : MonoBehaviour
         {
             onPlant = true;
             PlantYouAreOn = collider.gameObject;
-        }
-        
+        }    
     }
 
     private void OnTriggerExit2D(Collider2D collider)
@@ -65,7 +65,7 @@ public class PlayerBehaveior : MonoBehaviour
         {
             if (onRegister == true)
             {
-                EventManager.RegisterRealese();
+                NPCEventManager.RegisterRealese();
             }
             else if (onPlant == true)
             {

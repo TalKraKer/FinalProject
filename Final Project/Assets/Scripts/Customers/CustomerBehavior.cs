@@ -1,14 +1,16 @@
+using Assets.Scripts.Managers;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CustomerBehaveior : MonoBehaviour
+public class CustomerBehavior : MonoBehaviour
 {
     Vector2 FlowerPoint;
     Vector2 StartPoint;
     Vector2 RegisterPoint;
+    
     public Vector2 LineOffset = new Vector2(0,0);
     [SerializeField] Slider TimerBar;
     private float minX,minY,maxX,maxY;
@@ -22,19 +24,10 @@ public class CustomerBehaveior : MonoBehaviour
     bool onPlant;
     GameObject PlantYouPick;
 
-    LineManagment LineManager;
+    NPC_LineManagement LineManager;
     public int CurrentCustomerNumber = 0;
 
-    public enum StateMachine
-    {
-        WalkToFlower,
-        WalkToLine,
-        Wait,
-        InLine,
-        Exit
-    }
-
-    public StateMachine CurrentState;
+    public NPC_State CurrentState;
 
 
     // Start is called before the first frame update
@@ -53,9 +46,10 @@ public class CustomerBehaveior : MonoBehaviour
         SetRandomPlantToWalkTo();
 
         //line
-        LineManager = GameObject.FindGameObjectWithTag("LineManager").GetComponent<LineManagment>();
-        EventManager.LineLeaveEvent += ProgInLine;
-        EventManager.RegisterRealeseEvent += RegisterInteraction;
+        LineManager = GameObject.FindGameObjectWithTag("LineManager").GetComponent<NPC_LineManagement>();
+        NPCEventManager.LineLeaveEvent += ProgInLine;
+        NPCEventManager.RegisterReleaseEvent += RegisterInteraction;
+
     }
 
     // Update is called once per frame
@@ -63,10 +57,10 @@ public class CustomerBehaveior : MonoBehaviour
     {
         switch (CurrentState)
         {
-            case StateMachine.WalkToFlower:
+            case NPC_State.WalkToFlower:
                 MoveToPointXFirst(FlowerPoint);
                 break;
-            case StateMachine.Wait:
+            case NPC_State.Wait:
                 if (onPlant == true)
                 {
                     TimerBar.gameObject.SetActive(true);
@@ -83,17 +77,17 @@ public class CustomerBehaveior : MonoBehaviour
                 }
                 else
                 {
-                    CurrentState = StateMachine.WalkToFlower;
+                    CurrentState = NPC_State.WalkToFlower;
                     SetRandomPlantToWalkTo();
                     TimerBar.gameObject.SetActive(false);
                     CurrentWaitTimer = 0;
                 }
                 break;
-            case StateMachine.WalkToLine:
+            case NPC_State.WalkToLine:
                 MoveToPointYFirst(RegisterPoint+LineOffset);
                 WaitTime = 5000;
                 break;
-            case StateMachine.InLine:
+            case NPC_State.InLine:
                 TimerBar.gameObject.SetActive(true);
                 if (new Vector2(transform.position.x,transform.position.y) != RegisterPoint + LineOffset)
                 {
@@ -110,7 +104,7 @@ public class CustomerBehaveior : MonoBehaviour
                     NextState();
                 }
                 break;
-            case StateMachine.Exit:
+            case NPC_State.Exit:
                 MoveToPointXFirst(StartPoint);
                 if (transform.position == new Vector3(StartPoint.x, StartPoint.y, 0))
                 {
@@ -140,33 +134,33 @@ public class CustomerBehaveior : MonoBehaviour
 
     public void OnDestroy()
     {
-        EventManager.LineLeaveEvent -= ProgInLine;
-        EventManager.RegisterRealeseEvent -= RegisterInteraction;
+        NPCEventManager.LineLeaveEvent -= ProgInLine;
+        NPCEventManager.RegisterReleaseEvent -= RegisterInteraction;
     }
 
     public void NextState()
     {
-        if (CurrentState == StateMachine.WalkToFlower)
+        if (CurrentState == NPC_State.WalkToFlower)
         {
-            CurrentState = StateMachine.Wait;
+            CurrentState = NPC_State.Wait;
         }
-        else if (CurrentState == StateMachine.WalkToLine)
+        else if (CurrentState == NPC_State.WalkToLine)
         {
-            CurrentState = StateMachine.InLine;
+            CurrentState = NPC_State.InLine;
         }
-        else if (CurrentState == StateMachine.Wait)
+        else if (CurrentState == NPC_State.Wait)
         {
             PlantYouPick.SetActive(false);
             TimerBar.gameObject.SetActive(false);
-            EventManager.EnterLine();
+            NPCEventManager.EnterLine();
             CurrentCustomerNumber = LineManager.CustomerNumber;
             LineOffset = new Vector2(0- CurrentCustomerNumber, 0);
-            CurrentState = StateMachine.WalkToLine;
-        }else if (CurrentState == StateMachine.InLine)
+            CurrentState = NPC_State.WalkToLine;
+        }else if (CurrentState == NPC_State.InLine)
         {
             TimerBar.gameObject.SetActive(false);
-            EventManager.LeaveLine();
-            CurrentState = StateMachine.Exit;
+            NPCEventManager.LeaveLine();
+            CurrentState = NPC_State.Exit;
         }
     }
 
@@ -212,7 +206,7 @@ public class CustomerBehaveior : MonoBehaviour
 
     public void RegisterInteraction()
     {
-        if (CurrentState == StateMachine.InLine && CurrentCustomerNumber == 1)
+        if (CurrentState == NPC_State.InLine && CurrentCustomerNumber == 1)
         {
             NextState();
         }
@@ -237,7 +231,7 @@ public class CustomerBehaveior : MonoBehaviour
             }
             else
             {
-                CurrentState = StateMachine.Exit;
+                CurrentState = NPC_State.Exit;
             }
         }
         else if (CheckPlants(Plants))
@@ -247,7 +241,7 @@ public class CustomerBehaveior : MonoBehaviour
         }
         else
         {
-            CurrentState = StateMachine.Exit;
+            CurrentState = NPC_State.Exit;
         }
     }
 

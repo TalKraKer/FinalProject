@@ -1,10 +1,15 @@
+// Ignore Spelling: dialogue
 using UnityEngine;
+using System.Collections;
 
 public class CashRegister : MonoBehaviour
 {
     private bool playerInZone = false;
     private bool npcInZone = false;
+
     public DialogueManager dialogueManager;
+    public GameStateManager instance;
+    public PlayerSO playerSO;
     public NPC_SO[] NPCToTalkTo;
 
     void Start()
@@ -18,11 +23,24 @@ public class CashRegister : MonoBehaviour
         if (other.CompareTag("Player"))
             playerInZone = true;
 
-        if (other.CompareTag("NPC"))
+        if (other.CompareTag("NPC")) 
+        {
             npcInZone = true;
+            DialogueUI ui = FindObjectOfType<DialogueUI>();
+            PlantRequest request = other.GetComponent<PlantRequest>();
+            if (request != null && ui != null)
+            {
+                ui.DisplayPlantRequest(request);
+            }
+            else
+            {
+                Debug.LogWarning("Add PlantRequest component or DialogueUI.");
+            }
+        }
+            
 
-       // if (playerInZone && npcInZone)
-       //     DialogueManager.Instance.StartDialogue(NPCToTalkTo);
+        if (playerInZone && npcInZone)
+            StartCoroutine(Ready4Dialogue());
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -33,4 +51,14 @@ public class CashRegister : MonoBehaviour
         if (other.CompareTag("NPC"))
             npcInZone = false;
     }
-}
+
+    private IEnumerator Ready4Dialogue()
+    {
+        dialogueManager.StartDialogue(instance.selectedPlayerSO);
+
+        yield return new WaitForSeconds(1.5f);
+
+        dialogueManager.StartDialogue(NPCToTalkTo[0]);
+    }
+
+    }

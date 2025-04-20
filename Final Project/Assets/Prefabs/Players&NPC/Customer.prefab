@@ -202,8 +202,9 @@ GameObject:
   - component: {fileID: 2448437470324316484}
   - component: {fileID: 7885024189506975412}
   - component: {fileID: 3540985005080990080}
-  - component: {fileID: 3945025627511453370}
   - component: {fileID: 3452712840568201755}
+  - component: {fileID: 3945025627511453370}
+  - component: {fileID: 5795249619514437971}
   m_Layer: 3
   m_Name: Customer
   m_TagString: NPC
@@ -298,33 +299,6 @@ MonoBehaviour:
   Plants: []
   CurrentCustomerNumber: 0
   CurrentState: 0
---- !u!50 &3945025627511453370
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3246296473204041928}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &3452712840568201755
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -370,6 +344,48 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
+--- !u!50 &3945025627511453370
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3246296473204041928}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &5795249619514437971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3246296473204041928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2e233b0bdb3f6e4cb337864c5e0f040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterRequirement: 0
+  difficultyRequirement: 0
+  sunRequirement: 0
 --- !u!1 &3446920658394853491
 GameObject:
   m_ObjectHideFlags: 0

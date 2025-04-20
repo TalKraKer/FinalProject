@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class EventManager : MonoBehaviour
+public class NPCEventManager : MonoBehaviour
 {
     public static event Action LineEnterEvent;
     public static event Action LineLeaveEvent;
-    public static event Action RegisterRealeseEvent;
+    public static event Action RegisterReleaseEvent;
 
     public static void EnterLine()
     {
@@ -21,6 +21,6 @@ public class EventManager : MonoBehaviour
 
     public static void RegisterRealese()
     {
-        RegisterRealeseEvent?.Invoke();
+        RegisterReleaseEvent?.Invoke();
     }
 }
