@@ -240,6 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9599c92a33b4f4e4a9355213030aaa34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerData: {fileID: 11400000, guid: 1dea0d8939249874980cbf18cf52dbb7, type: 2}
   moveSpeed: 5
   onRegister: 0
   onPlant: 0
