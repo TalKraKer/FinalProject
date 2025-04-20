@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7958738515546018152}
   - component: {fileID: 1334996304084277755}
   - component: {fileID: 3969501214207183753}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7946977157626989213}
   - component: {fileID: 6583394894738241726}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: TimerBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,8 @@ GameObject:
   - component: {fileID: 3540985005080990080}
   - component: {fileID: 3452712840568201755}
   - component: {fileID: 3945025627511453370}
-  m_Layer: 0
+  - component: {fileID: 5795249619514437971}
+  m_Layer: 3
   m_Name: Customer
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -370,6 +371,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5795249619514437971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3246296473204041928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2e233b0bdb3f6e4cb337864c5e0f040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterRequirement: 0
+  difficultyRequirement: 0
+  sunRequirement: 0
 --- !u!1 &3446920658394853491
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,7 +397,7 @@ GameObject:
   - component: {fileID: 3820199824814468762}
   - component: {fileID: 1848354771808850096}
   - component: {fileID: 3250785505762656438}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,7 +472,7 @@ GameObject:
   - component: {fileID: 7668381899192364686}
   - component: {fileID: 4918470416956372600}
   - component: {fileID: 5632736409376680382}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -529,7 +545,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 105283683450917114}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
