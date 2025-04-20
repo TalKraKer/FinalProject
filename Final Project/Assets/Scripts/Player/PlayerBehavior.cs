@@ -10,14 +10,17 @@ public class PlayerBehavior : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveInput;
 
+    [SerializeField] GameObject PlantHoldPos;
+
     public bool onRegister;
     public bool onPlant;
+    public bool onRestock;
+    public GameObject RestockStation;
     public GameObject PlantYouAreOn;
-    public List<GameObject> PlantsYouAreHolding;
+    public GameObject PlantYouAreHolding;
 
     void Start()
     {
-        PlantsYouAreHolding = new List<GameObject>();
         rb = GetComponent<Rigidbody2D>();
         onRegister = false;
         onPlant = false;
@@ -30,15 +33,20 @@ public class PlayerBehavior : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collider.gameObject.name == "CashRegister")
+        if (collider.gameObject.name == "CashRegister")
         {
             onRegister = true;
+        }
+        else if (collider.gameObject.tag == "Restock")
+        {
+            onRestock = true;
+            RestockStation = collider.gameObject;
         }
         else if (collider.gameObject.tag == "Plant")
         {
             onPlant = true;
             PlantYouAreOn = collider.gameObject;
-        }    
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collider)
@@ -46,7 +54,13 @@ public class PlayerBehavior : MonoBehaviour
         if (collider.gameObject.name == "CashRegister")
         {
             onRegister = false;
-        }else if (collider.gameObject.tag == "Plant")
+        }
+        else if (collider.gameObject.tag == "Restock")
+        {
+            onRestock = false;
+            RestockStation = null;
+        }
+        else if (collider.gameObject.tag == "Plant")
         {
             onPlant = false;
             PlantYouAreOn = null;
@@ -67,21 +81,26 @@ public class PlayerBehavior : MonoBehaviour
             {
                 NPCEventManager.RegisterRealese();
             }
-            else if (onPlant == true)
+            else if (PlantYouAreHolding == null)
             {
-                PlantsYouAreHolding.Add(PlantYouAreOn);
-                PlantYouAreOn.SetActive(false);
+                if (onPlant == true)
+                {
+                    PlantYouAreHolding = PlantYouAreOn;
+                    PlantYouAreHolding.GetComponent<PlantHolding>().FollowHolder(PlantHoldPos);
+                }
+                else
+                {
+                    if (onRestock)
+                    {
+                        RestockStation.GetComponent<PlantRestock>().restock();
+                    }
+                }
             }
             else
             {
-                float tempOffset = 0;
-                foreach (GameObject plant in PlantsYouAreHolding)
-                {
-                    plant.SetActive(true);
-                    plant.transform.position = new Vector3(transform.position.x, transform.position.y + tempOffset, transform.position.z);
-                    tempOffset += 0.5f;
-                }
-                PlantsYouAreHolding.Clear();
+                PlantYouAreHolding.transform.position = transform.position;
+                PlantYouAreHolding.GetComponent<PlantHolding>().StopFollowHolder();
+                PlantYouAreHolding = null;
             }
         }
     }

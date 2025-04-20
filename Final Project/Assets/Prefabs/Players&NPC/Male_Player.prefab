@@ -35,7 +35,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.653, y: 0.6365, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3014078438817680391}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5159289302578261548
@@ -242,10 +243,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerData: {fileID: 11400000, guid: 475f5aa10abcc8e429da87fa91703d6e, type: 2}
   moveSpeed: 5
+  PlantHoldPos: {fileID: 3480954104359111407}
   onRegister: 0
   onPlant: 0
+  onRestock: 0
+  RestockStation: {fileID: 0}
   PlantYouAreOn: {fileID: 0}
-  PlantsYouAreHolding: []
+  PlantYouAreHolding: {fileID: 0}
 --- !u!114 &8315155219231710213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,3 +264,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputChannel: {fileID: 11400000, guid: 4a1efbee397abe346a3d78fa08d70b89, type: 2}
   moveSpeed: 5
+--- !u!1 &3480954104359111407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3014078438817680391}
+  m_Layer: 3
+  m_Name: PlayerPlantHoldPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3014078438817680391
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3480954104359111407}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5809881020381328211}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
