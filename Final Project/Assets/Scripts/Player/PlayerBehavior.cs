@@ -11,6 +11,7 @@ public class PlayerBehavior : MonoBehaviour
     private Vector2 moveInput;
 
     [SerializeField] GameObject PlantHoldPos;
+    [SerializeField] InputChannel inputChannel;
 
     public bool onRegister;
     public bool onPlant;
@@ -21,14 +22,10 @@ public class PlayerBehavior : MonoBehaviour
 
     void Start()
     {
+        inputChannel.OnInteractEvent += Interact;
         rb = GetComponent<Rigidbody2D>();
         onRegister = false;
         onPlant = false;
-    }
-
-    void FixedUpdate()
-    {
-        rb.velocity = moveSpeed * moveInput;
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -67,41 +64,32 @@ public class PlayerBehavior : MonoBehaviour
         }
     }
 
-    public void Move(InputAction.CallbackContext context)
+    public void Interact()
     {
-        moveInput = context.ReadValue<Vector2>();
-        Debug.Log("Move input: " + moveInput);
-    }
-
-    public void Interact(InputAction.CallbackContext context)
-    {
-        if (context.performed)
+        if (onRegister == true)
         {
-            if (onRegister == true)
+            NPCEventManager.RegisterRealese();
+        }
+        else if (PlantYouAreHolding == null)
+        {
+            if (onPlant == true)
             {
-                NPCEventManager.RegisterRealese();
-            }
-            else if (PlantYouAreHolding == null)
-            {
-                if (onPlant == true)
-                {
-                    PlantYouAreHolding = PlantYouAreOn;
-                    PlantYouAreHolding.GetComponent<PlantHolding>().FollowHolder(PlantHoldPos);
-                }
-                else
-                {
-                    if (onRestock)
-                    {
-                        RestockStation.GetComponent<PlantRestock>().restock();
-                    }
-                }
+                PlantYouAreHolding = PlantYouAreOn;
+                PlantYouAreHolding.GetComponent<PlantHolding>().FollowHolder(PlantHoldPos);
             }
             else
             {
-                PlantYouAreHolding.transform.position = transform.position;
-                PlantYouAreHolding.GetComponent<PlantHolding>().StopFollowHolder();
-                PlantYouAreHolding = null;
+                if (onRestock)
+                {
+                    RestockStation.GetComponent<PlantRestock>().restock();
+                }
             }
+        }
+        else
+        {
+            PlantYouAreHolding.transform.position = transform.position;
+            PlantYouAreHolding.GetComponent<PlantHolding>().StopFollowHolder();
+            PlantYouAreHolding = null;
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Plant : MonoBehaviour
 {
     [SerializeField] PlantSO[] PlantTypes;
-    [SerializeField] PlantSO currentPlantType;
+    [SerializeField] public PlantSO currentPlantType;
     // Start is called before the first frame update
     void Start()
     {

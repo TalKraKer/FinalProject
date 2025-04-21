@@ -16,4 +16,4 @@ MonoBehaviour:
   NeededWater: 3
   NeededShade: 1
   Level: 1
-  Icon: {fileID: 21300000, guid: f777398dc8ec51349a21edbb3f77ebfd, type: 3}
+  Icon: {fileID: 21300000, guid: 5e2d8e42f84708340a749de4b2eb98ad, type: 3}
