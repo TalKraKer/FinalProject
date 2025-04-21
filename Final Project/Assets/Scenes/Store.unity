@@ -601,7 +601,6 @@ GameObject:
   - component: {fileID: 164030680}
   - component: {fileID: 164030679}
   - component: {fileID: 164030681}
-  - component: {fileID: 164030682}
   m_Layer: 0
   m_Name: CashRegister
   m_TagString: Register
@@ -711,24 +710,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.1
---- !u!114 &164030682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164030678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 747c56f678a2d074cbe57f7d1ab1cd96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueManager: {fileID: 1711440549}
-  instance: {fileID: 776392411}
-  playerSO: {fileID: 11400000, guid: 475f5aa10abcc8e429da87fa91703d6e, type: 2}
-  NPCToTalkTo:
-  - {fileID: 11400000, guid: 40ba40d4e96a6a243b6a2d38e3127904, type: 2}
-  - {fileID: 11400000, guid: 5c94474bc0893f24baac3123083cab5f, type: 2}
 --- !u!1 &184784221
 GameObject:
   m_ObjectHideFlags: 0
