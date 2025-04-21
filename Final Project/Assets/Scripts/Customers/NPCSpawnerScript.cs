@@ -8,10 +8,10 @@ public class NPCSpawnerScript : MonoBehaviour
     public GameObject CustomerPrefab;
     public int spawnTimer;
     public int customerSprite=0;
-    public int timer=0;
+    public float timer=0;
     public Sprite[] CustomerList;
-    public int minSpawnTime = 1400;
-    public int maxSpawnTime = 3400;
+    public int minSpawnTime = 500;
+    public int maxSpawnTime = 1500;
 
     private void Start()
     {
