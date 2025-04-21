@@ -1361,8 +1361,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Plants: []
-  PlantHoldPos: {fileID: 0}
-  GameStateManager: {fileID: 776392411}
   PlantParent: {fileID: 1736723226}
   PlantPrefab: {fileID: 979060039617683111, guid: 12e7814fd9e03044a8b3fd1903c82769, type: 3}
 --- !u!1 &420459218

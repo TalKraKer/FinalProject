@@ -13,7 +13,7 @@ public class InputReader : MonoBehaviour
         inputActions.Player.Move.performed += OnMove;
         inputActions.Player.Move.canceled += OnMove;
 
-        inputActions.Player.Interact.performed += OnInteract;
+        inputActions.Player.Interact.started += OnInteract;
 
         inputActions.Enable();
     }
@@ -22,7 +22,7 @@ public class InputReader : MonoBehaviour
     {
         inputActions.Player.Move.performed -= OnMove;
         inputActions.Player.Move.canceled -= OnMove;
-        inputActions.Player.Interact.performed -= OnInteract;
+        inputActions.Player.Interact.started -= OnInteract;
         inputActions.Disable();
     }
 
