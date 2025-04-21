@@ -6,7 +6,7 @@ public class GameStateManager : MonoBehaviour
     //public GameState currentGameState { get; private set; }
 
     public PlayerSO selectedPlayerSO;
-    private GameObject currentPlayer;
+    public GameObject currentPlayer;
 
     public Transform playerSpawnPoint;
     void Start()

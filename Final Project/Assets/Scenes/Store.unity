@@ -1361,6 +1361,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Plants: []
+  PlantHoldPos: {fileID: 0}
+  GameStateManager: {fileID: 776392411}
   PlantParent: {fileID: 1736723226}
   PlantPrefab: {fileID: 979060039617683111, guid: 12e7814fd9e03044a8b3fd1903c82769, type: 3}
 --- !u!1 &420459218
@@ -2489,6 +2491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedPlayerSO: {fileID: 0}
+  currentPlayer: {fileID: 0}
   playerSpawnPoint: {fileID: 1983748427}
 --- !u!1 &785279566
 GameObject:
@@ -4839,7 +4842,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1787188929
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5200,7 +5203,7 @@ GameObject:
   - component: {fileID: 1983748427}
   m_Layer: 3
   m_Name: PlayerSpawn
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

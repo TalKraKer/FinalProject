@@ -23,6 +23,11 @@ public class PlantRestock : MonoBehaviour
 
     public void restock()
     {
+        if (Player == null)
+        {
+            Player = GameObject.FindGameObjectWithTag("Player");
+            PlantHoldPos = GameObject.Find("PlayerPlantHoldPos");
+        }
         restocked = false;
         foreach (GameObject Plant in Plants)
         {
