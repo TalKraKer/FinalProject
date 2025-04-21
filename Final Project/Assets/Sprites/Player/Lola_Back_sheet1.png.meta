@@ -1,0 +1,620 @@
+fileFormatVersion: 2
+guid: 52fc305b1a4335841bbe3e94fbb114e9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 815
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7796ad2737f30b647bcabf1541b2c3b7
+      internalID: 1849171447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_1
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 815
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5a2da6ff4b38e46accab0a00118ce6
+      internalID: -1184611036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_2
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 815
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2c0c8f29b2bf7409a60bbb1c263143
+      internalID: 1610693851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_3
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 815
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2f20aef981e6946b19be5fb6cf7a92
+      internalID: 1685568058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_4
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 815
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625938b525bc62a46b081948f890659e
+      internalID: 1571465597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_5
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 815
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e546500ecf85e64b9e8e5be02adbb63
+      internalID: -1836682122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_6
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 815
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20432f49bfea17c47954b2f76d584208
+      internalID: -1412152092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_7
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 815
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b464819bc29d9b48b457b55faf95b4f
+      internalID: 1238794804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_8
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 815
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c98b241f2fdb64f8e71b184221d0be
+      internalID: -1631031733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 435
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db04b9fef6b68fd48bef372743de0984
+      internalID: -738182214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_10
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 435
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b5d73ccacc9b84b8b850c09e0e1570
+      internalID: -1033279492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_11
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 435
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a8679385bd36e4d82674dc645188cc
+      internalID: 1489067748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_12
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 435
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931411491260b07448c6df7a46d66d1b
+      internalID: -1281176236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_13
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 435
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6fffb2963324d4893e5a6096bbcf6e
+      internalID: -1328413459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_14
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 435
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7162ef88034aaac4fa4c95b057fc4203
+      internalID: 1467996741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_15
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 435
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44cd3bab58d7004aa0c68114de9a164
+      internalID: 1429878121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_16
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 435
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e129756cfd394a4994d587cb0f80bca
+      internalID: 302593948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_17
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 435
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e71d3982e94b544a7a4dfc2da07a69
+      internalID: 453571398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 55
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd316ad87a9370546bc2103aa9b1c437
+      internalID: -1815942166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_19
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 55
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee96dc9a7975b6644884d024c43299c4
+      internalID: -1224409543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_20
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 55
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6643331cdbb5b384fab1528f3fbc75a4
+      internalID: 1476580491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_21
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 55
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6514189e8a6ed4080647b3c1423a4f
+      internalID: 382818842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lola_Back_sheet1_22
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 55
+        width: 210
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23af91d193768824ea3feda9f4c04c90
+      internalID: 1777234474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Lola_Back_sheet1_0: 1849171447
+      Lola_Back_sheet1_1: -1184611036
+      Lola_Back_sheet1_10: -1033279492
+      Lola_Back_sheet1_11: 1489067748
+      Lola_Back_sheet1_12: -1281176236
+      Lola_Back_sheet1_13: -1328413459
+      Lola_Back_sheet1_14: 1467996741
+      Lola_Back_sheet1_15: 1429878121
+      Lola_Back_sheet1_16: 302593948
+      Lola_Back_sheet1_17: 453571398
+      Lola_Back_sheet1_18: -1815942166
+      Lola_Back_sheet1_19: -1224409543
+      Lola_Back_sheet1_2: 1610693851
+      Lola_Back_sheet1_20: 1476580491
+      Lola_Back_sheet1_21: 382818842
+      Lola_Back_sheet1_22: 1777234474
+      Lola_Back_sheet1_3: 1685568058
+      Lola_Back_sheet1_4: 1571465597
+      Lola_Back_sheet1_5: -1836682122
+      Lola_Back_sheet1_6: -1412152092
+      Lola_Back_sheet1_7: 1238794804
+      Lola_Back_sheet1_8: -1631031733
+      Lola_Back_sheet1_9: -738182214
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

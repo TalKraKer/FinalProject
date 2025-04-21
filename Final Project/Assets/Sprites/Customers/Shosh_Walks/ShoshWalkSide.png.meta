@@ -1,0 +1,642 @@
+fileFormatVersion: 2
+guid: 884dd583019cbac478f7fe674fae8e21
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShoshWalkSide_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 595
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c7dfd78ca45794ab6c1e2e9c35f146
+      internalID: -799150189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_1
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 595
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef23e985657e864c9aa511e2fae7c27
+      internalID: 1305607132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_2
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 595
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9e44033da617648b99b69bbbadfb63
+      internalID: 327363650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_3
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 595
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ffca1de20796a41bfaecf5796230b8
+      internalID: -727256308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_4
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 595
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3e99c8ad59a264c932f41fa23afba4
+      internalID: 1826287064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_5
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 595
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4668ba983ac2bda4a98e9bf674f76536
+      internalID: 2043256538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_6
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 595
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd35db1f19f2736409895c5b760333a1
+      internalID: -569767918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_7
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 595
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac48d137e21347e4fbd2d28e8e7f47e6
+      internalID: -1960713329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_8
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 595
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e20f771b347454c81925f0ed96183c
+      internalID: 750241471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 345
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5009931d736ea14bbb1e3016f55747e
+      internalID: 1965766133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_10
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 345
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146c22d1fd81df141865e5e2e284c6f1
+      internalID: 873012417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_11
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 345
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748afaf31f7de06438b86cfbe65ca716
+      internalID: 22398723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_12
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 345
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21934249320c9e4bab65aa2a210baf5
+      internalID: 564528200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_13
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 345
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5dcf317a0968a848af5ad5698eaadb5
+      internalID: -1735361812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_14
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 345
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de984c22527791443a523d39da0d05a6
+      internalID: 1777783998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_15
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 345
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23807c67af55184d977bb194f4c1994
+      internalID: -155190367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_16
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 345
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5c8fd94a38d61418b9162123778eaf
+      internalID: 103898666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_17
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 345
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5524b5d2ac0df498037ffd561433e0
+      internalID: 427293315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beced94bdf097c040a79e2479123c4d7
+      internalID: -813764517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_19
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 95
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79aaf8b95373d6e4193843e861fc13e4
+      internalID: 609236669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_20
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 95
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8d1c48ea87f1140aac2b5b77c92db6
+      internalID: 862716649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_21
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 95
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e7f14069f02664a973f1a66f3645db
+      internalID: -1248299378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_22
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 95
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc21cdc5ab5f2744b8c7eb0dfb485c9d
+      internalID: -1316929613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShoshWalkSide_23
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 95
+        width: 220
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e16bf2c724485247af8ee610cada411
+      internalID: 1346745844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ShoshWalkSide_0: -799150189
+      ShoshWalkSide_1: 1305607132
+      ShoshWalkSide_10: 873012417
+      ShoshWalkSide_11: 22398723
+      ShoshWalkSide_12: 564528200
+      ShoshWalkSide_13: -1735361812
+      ShoshWalkSide_14: 1777783998
+      ShoshWalkSide_15: -155190367
+      ShoshWalkSide_16: 103898666
+      ShoshWalkSide_17: 427293315
+      ShoshWalkSide_18: -813764517
+      ShoshWalkSide_19: 609236669
+      ShoshWalkSide_2: 327363650
+      ShoshWalkSide_20: 862716649
+      ShoshWalkSide_21: -1248299378
+      ShoshWalkSide_22: -1316929613
+      ShoshWalkSide_23: 1346745844
+      ShoshWalkSide_3: -727256308
+      ShoshWalkSide_4: 1826287064
+      ShoshWalkSide_5: 2043256538
+      ShoshWalkSide_6: -569767918
+      ShoshWalkSide_7: -1960713329
+      ShoshWalkSide_8: 750241471
+      ShoshWalkSide_9: 1965766133
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
