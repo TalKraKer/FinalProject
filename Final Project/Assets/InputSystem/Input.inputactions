@@ -169,6 +169,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "book",
+                    "type": "Button",
+                    "id": "1c8f9852-7919-43f4-b520-0ca49e695711",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -191,6 +200,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Replay",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "50a2491b-2024-4486-86fe-b4c7bcb7e521",
+                    "path": "<Keyboard>/b",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "book",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -24,7 +24,7 @@ public class CustomerBehavior : MonoBehaviour
     bool onPlant;
     GameObject PlantYouPick;
 
-    GameObject moneyManager;
+    GameObject UiManager;
 
     NPC_LineManagement LineManager;
     public int CurrentCustomerNumber = 0;
@@ -35,9 +35,9 @@ public class CustomerBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (moneyManager == null)
+        if (UiManager == null)
         {
-            moneyManager = GameObject.Find("MoneyManager");
+            UiManager = GameObject.Find("UiManager");
         }
 
         step = 4.0f * Time.deltaTime;
@@ -215,7 +215,7 @@ public class CustomerBehavior : MonoBehaviour
     {
         if (CurrentState == NPC_State.InLine && CurrentCustomerNumber == 1)
         {
-            moneyManager.GetComponent<MoneyManager>().addMoney(PlantYouPick.GetComponent<Plant>().currentPlantType.Price); 
+            UiManager.GetComponent<MoneyManager>().addMoney(PlantYouPick.GetComponent<Plant>().currentPlantType.Price); 
             NextState();
         }
     }

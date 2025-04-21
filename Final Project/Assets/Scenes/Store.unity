@@ -985,8 +985,9 @@ GameObject:
   m_Component:
   - component: {fileID: 256489272}
   - component: {fileID: 256489273}
+  - component: {fileID: 256489274}
   m_Layer: 0
-  m_Name: MoneyManager
+  m_Name: UiManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1020,6 +1021,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoneyText: {fileID: 210328819}
+  currentMoney: 0
+--- !u!114 &256489274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256489271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba73a996dfdfe1345a0c689d83b3ca3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentActive: 0
+  uiBookElement: {fileID: 1787188928}
 --- !u!1 &286618209
 GameObject:
   m_ObjectHideFlags: 0
@@ -4225,6 +4241,78 @@ Transform:
   - {fileID: 1373351159}
   m_Father: {fileID: 1736723227}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1787188928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1787188929}
+  - component: {fileID: 1787188931}
+  - component: {fileID: 1787188930}
+  m_Layer: 5
+  m_Name: bookImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1787188929
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787188928}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 8, y: 5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2059137661}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -8, y: -31}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1787188930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787188928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: 463c264ed4599a64689d634a196e096b, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1787188931
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787188928}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1839706303
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4815,8 +4903,9 @@ GameObject:
   - component: {fileID: 2059137660}
   - component: {fileID: 2059137659}
   - component: {fileID: 2059137658}
+  - component: {fileID: 2059137662}
   m_Layer: 5
-  m_Name: MoneyUI
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4899,6 +4988,7 @@ RectTransform:
   m_Children:
   - {fileID: 1099686133}
   - {fileID: 210328818}
+  - {fileID: 1787188929}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4906,6 +4996,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!225 &2059137662
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059137657}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &2064497800
 GameObject:
   m_ObjectHideFlags: 0
@@ -5081,6 +5183,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 7fc9cd07-63d1-4d09-83e3-9b6955546fe2
     m_ActionName: UI/Replay
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 256489274}
+        m_TargetAssemblyTypeName: BookUI, Assembly-CSharp
+        m_MethodName: changeBookState
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 1c8f9852-7919-43f4-b520-0ca49e695711
+    m_ActionName: UI/book[/Keyboard/b]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Player
