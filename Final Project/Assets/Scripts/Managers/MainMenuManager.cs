@@ -20,6 +20,9 @@ public class MainMenuManager : MonoBehaviour
 
     public GameObject malePlayerPrefab;
     public GameObject femalePlayerPrefab;
+    public PlayerSO itanSO;
+    public PlayerSO shiraSO;
+
 
     public void OnPlayClicked()
     {
@@ -32,6 +35,7 @@ public class MainMenuManager : MonoBehaviour
         Debug.Log("Male button clicked");
         Time.timeScale = 2f;
         PlayerSelector.selectedPlayer = malePlayerPrefab;
+        PlayerSelector.SelectPlayer(malePlayerPrefab, itanSO);
         SceneManager.LoadScene("Store");
     }
 
@@ -40,6 +44,7 @@ public class MainMenuManager : MonoBehaviour
         Debug.Log("Female button clicked");
         Time.timeScale = 2f;
         PlayerSelector.selectedPlayer = femalePlayerPrefab;
+        PlayerSelector.SelectPlayer(femalePlayerPrefab, shiraSO);
         SceneManager.LoadScene("Store");
     }
 

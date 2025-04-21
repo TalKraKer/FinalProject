@@ -13,14 +13,26 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Image portraitImage;
 
     public static DialogueManager Instance;
+    public static DialogueUI dialogueUI;
     public event Action<PlayerSO> OnDialogueStart;
 
-    public PlayerSO[] playerSO;
+  //  public PlayerSO[] playerSO;
     private Queue<string> currentSentences;
 
     void Start()
     {
-        // dialogueUI.DisplayDialogue(playerSO[0]);
+        object playerSO = null;
+        if (PlayerSelector.selectedPlayerSO != null)
+        {
+
+            StartDialogue(PlayerSelector.selectedPlayerSO);
+            //StartDialogue(playerSO[0]);
+        }
+        else
+        {
+            Debug.LogError("No PlayerSO selected!");
+        }
+       // dialogueUI.DisplayDialogue(playerSO[0]);
     }
 
     private void Awake()
@@ -64,6 +76,6 @@ public class DialogueManager : MonoBehaviour
     private void EndDialogue()
     {
         PlayerDialoguePanel.SetActive(false);
-     //   NPCDialoguePanel.SetActive(false);
+        NPCDialoguePanel.SetActive(false);
     }
 }

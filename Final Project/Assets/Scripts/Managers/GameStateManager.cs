@@ -19,7 +19,9 @@ public class GameStateManager : MonoBehaviour
             PlayerBehavior playerComponent = currentPlayer.GetComponent<PlayerBehavior>();
             if (playerComponent != null)
             {
-                selectedPlayerSO = playerComponent.playerData;
+               // GameObject player = Instantiate(PlayerSelector.selectedPlayer, playerSpawnPoint.position, Quaternion.identity);
+               // selectedPlayerSO = playerComponent.playerData;
+                PlayerSO activePlayerSO = PlayerSelector.selectedPlayerSO;
             }
             else
             {

@@ -8,7 +8,10 @@ public class CashRegister : MonoBehaviour
     private bool npcInZone = false;
 
     public DialogueManager dialogueManager;
+    public static DialogueUI dialogueUI;
     public GameStateManager instance;
+    [SerializeField] GameObject PlayerDialoguePanel;
+    [SerializeField] GameObject NPCDialoguePanel;
     public PlayerSO playerSO;
     public NPC_SO[] NPCToTalkTo;
 
@@ -16,6 +19,8 @@ public class CashRegister : MonoBehaviour
     {
         if (dialogueManager == null)
             dialogueManager = FindObjectOfType<DialogueManager>();
+        if (instance == null)
+            instance = FindObjectOfType<GameStateManager>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -37,10 +42,18 @@ public class CashRegister : MonoBehaviour
                 Debug.LogWarning("Add PlantRequest component or DialogueUI.");
             }
         }
-            
+
 
         if (playerInZone && npcInZone)
-            StartCoroutine(Ready4Dialogue());
+        {
+            NPCDialoguePanel.SetActive(true);       
+            Debug.LogError("Dialog activated");
+           // PlayerSO activePlayer = instance.selectedPlayerSO != null ? instance.selectedPlayerSO : playerSO;
+           // dialogueManager.StartDialogue(activePlayer);
+            //dialogueManager.StartDialogue(instance.selectedPlayerSO);
+        }
+            
+          //StartCoroutine(Ready4Dialogue());
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -54,6 +67,7 @@ public class CashRegister : MonoBehaviour
 
     private IEnumerator Ready4Dialogue()
     {
+        Debug.LogError("Dialog start");
         dialogueManager.StartDialogue(instance.selectedPlayerSO);
 
         yield return new WaitForSeconds(1.5f);
