@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68b7ff243e18c4a45871da00b9816c1e, type: 3}
-  m_Name: Boris
+  m_Name: Sven
   m_EditorClassIdentifier: 
-  NPC_name: Boris
-  NPC_portrait: {fileID: 21300000, guid: 6929b9b76cc7b804184488d4e70a28a0, type: 3}
+  NPC_name: Sven
+  NPC_portrait: {fileID: 21300000, guid: c4fd45b0065785c47b8e18855e890de6, type: 3}
   NPC_Animation: {fileID: 0}
-  plantRequest: {fileID: 11400000, guid: 402d819f05459864f9758c4e3b5053ec, type: 2}
+  plantRequest: {fileID: 11400000, guid: 5aecddef1cd1c6249aa3e9b3f655a3b4, type: 2}

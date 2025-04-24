@@ -1,11 +1,12 @@
 using UnityEngine;
+//using UnityEngine.Input;
 using UnityEngine.InputSystem;
 
-public class InputReader : MonoBehaviour
+public class InputReader : MonoBehaviour, Input.IPlayerActions, Input.IUIActions
 {
     public InputChannel inputChannel;
     private Input inputActions;
-
+    
     private void Awake()
     {
         inputActions = new Input();
@@ -14,6 +15,10 @@ public class InputReader : MonoBehaviour
         inputActions.Player.Move.canceled += OnMove;
 
         inputActions.Player.Interact.performed += OnInteract;
+        inputActions.Player.OpenBook.performed += OnOpenBook;
+
+        inputActions.UI.LeftClick.performed += OnLeftClick;
+        inputActions.UI.Cancel.performed += OnCancel;
 
         inputActions.Enable();
     }
@@ -22,7 +27,13 @@ public class InputReader : MonoBehaviour
     {
         inputActions.Player.Move.performed -= OnMove;
         inputActions.Player.Move.canceled -= OnMove;
+
         inputActions.Player.Interact.performed -= OnInteract;
+        inputActions.Player.OpenBook.performed -= OnOpenBook;
+
+        inputActions.UI.LeftClick.performed -= OnLeftClick;
+        inputActions.UI.Cancel.performed -= OnCancel;
+
         inputActions.Disable();
     }
 
@@ -38,5 +49,27 @@ public class InputReader : MonoBehaviour
     {
         inputChannel.RaiseInteract();
         Debug.Log("InputReader: Interact pressed (E)");
-    } 
+    }
+
+    public void OnOpenBook(InputAction.CallbackContext context)
+    {
+        inputChannel.RaiseInteract();
+        Debug.Log("InputReader: Interact pressed (Q)");
+    }
+
+    public void OnLeftClick(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Debug.Log("Left click detected!");
+        }
+    }
+
+    public void OnCancel(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Debug.Log("cancel detected!");
+        }
+    }
 }

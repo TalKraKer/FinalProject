@@ -1,59 +1,83 @@
-// Ignore Spelling: dialogue
 using UnityEngine;
-using System.Collections;
-
 public class CashRegister : MonoBehaviour
 {
     private bool playerInZone = false;
     private bool npcInZone = false;
 
     public DialogueManager dialogueManager;
-    public static DialogueUI dialogueUI;
     public GameStateManager instance;
-    [SerializeField] GameObject PlayerDialoguePanel;
-    [SerializeField] GameObject NPCDialoguePanel;
-    public PlayerSO playerSO;
-    public NPC_SO[] NPCToTalkTo;
+
+    public PlayerSelector selectedPlayer;
+    public PlayerSO activePlayer;
+    public NPC_SO[] npcList;
 
     void Start()
     {
         if (dialogueManager == null)
             dialogueManager = FindObjectOfType<DialogueManager>();
+
         if (instance == null)
             instance = FindObjectOfType<GameStateManager>();
+
+        if (selectedPlayer == null)
+            activePlayer = instance.selectedPlayerSO;
     }
 
+    private void OnEnable()
+    {
+        NPCSpawnerScript.OnCustomerSpawned += ReadNPCData;
+    }
+
+    private void OnDisable()
+    {
+        NPCSpawnerScript.OnCustomerSpawned -= ReadNPCData;
+    }
+
+    private void ReadNPCData(GameObject newNPC)
+    {
+        if (newNPC == null)
+        {
+            Debug.LogError("newNPC is null in ReadNPCData!");
+            return;
+        }
+
+        NPCIdentity identity = newNPC.GetComponent<NPCIdentity>();
+        if(identity == null)
+        {
+            Debug.Log("In CashRegister script: NPCIdentity is null.");
+            return;
+        }
+
+        if(identity.npcData == null)
+        {
+            Debug.Log("In CashRegister script: npcData is null.");
+            return;
+        }
+        Debug.Log("NPC: " + identity.npcData.NPC_name + "is ready for dialogue.");
+    }       
+
+    
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
             playerInZone = true;
 
-        if (other.CompareTag("NPC")) 
-        {
-            npcInZone = true;
-            DialogueUI ui = FindObjectOfType<DialogueUI>();
-            PlantRequest request = other.GetComponent<PlantRequest>();
-            if (request != null && ui != null)
-            {
-                ui.DisplayPlantRequest(request);
-            }
-            else
-            {
-                Debug.LogWarning("Add PlantRequest component or DialogueUI.");
-            }
-        }
-
+        if (other.CompareTag("NPC"))       
+            npcInZone = true;     
 
         if (playerInZone && npcInZone)
         {
-            NPCDialoguePanel.SetActive(true);       
-            Debug.LogError("Dialog activated");
-           // PlayerSO activePlayer = instance.selectedPlayerSO != null ? instance.selectedPlayerSO : playerSO;
-           // dialogueManager.StartDialogue(activePlayer);
-            //dialogueManager.StartDialogue(instance.selectedPlayerSO);
+            NPCIdentity npcEnterd = other.GetComponent<NPCIdentity>();
+
+            if (npcEnterd != null && npcEnterd.npcData != null)
+            {
+                dialogueManager.StartPlayerDialogue(activePlayer);
+                dialogueManager.StartNpcDialogue(npcEnterd);
+                Debug.LogError("Dialog activated");
+            }
+            else 
+                Debug.LogError("NPC Error");                  
         }
-            
-          //StartCoroutine(Ready4Dialogue());
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -64,15 +88,4 @@ public class CashRegister : MonoBehaviour
         if (other.CompareTag("NPC"))
             npcInZone = false;
     }
-
-    private IEnumerator Ready4Dialogue()
-    {
-        Debug.LogError("Dialog start");
-        dialogueManager.StartDialogue(instance.selectedPlayerSO);
-
-        yield return new WaitForSeconds(1.5f);
-
-        dialogueManager.StartDialogue(NPCToTalkTo[0]);
-    }
-
-    }
+}

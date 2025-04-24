@@ -2,26 +2,23 @@ using UnityEngine;
 
 public class GameStateManager : MonoBehaviour
 {
-    public static GameStateManager Instance { get; private set; }
-    //public GameState currentGameState { get; private set; }
+   // public static GameStateManager Instance;
 
     public PlayerSO selectedPlayerSO;
-    private GameObject currentPlayer;
+    public GameObject currentPlayer;
 
     public Transform playerSpawnPoint;
     void Start()
     {
-
         if (PlayerSelector.selectedPlayer != null)
         {
             currentPlayer = Instantiate(PlayerSelector.selectedPlayer, playerSpawnPoint.position, Quaternion.identity);
 
             PlayerBehavior playerComponent = currentPlayer.GetComponent<PlayerBehavior>();
+
             if (playerComponent != null)
             {
-               // GameObject player = Instantiate(PlayerSelector.selectedPlayer, playerSpawnPoint.position, Quaternion.identity);
-               // selectedPlayerSO = playerComponent.playerData;
-                PlayerSO activePlayerSO = PlayerSelector.selectedPlayerSO;
+                selectedPlayerSO = PlayerSelector.selectedPlayerSO;
             }
             else
             {
@@ -32,7 +29,5 @@ public class GameStateManager : MonoBehaviour
         {
             Debug.LogError("Select a player prefab.");
         }
-        }
+    }
 }
-
-
