@@ -3,19 +3,23 @@ using System;
 
 public class DialogueManager : MonoBehaviour
 {
-    public event Action<PlayerSO> OnPlayerDialogue;
-    public event Action<NPCIdentity> OnNpcDialogue;
+    public event Action OnPlayerDialogue;
+    public event Action<PlantSO> OnNpcDialogue;
+    public event Action EndPdialogue;
 
-    public void StartPlayerDialogue(PlayerSO player)
+    public void StartPlayerDialogue()
     {
-        Debug.Log(player.playerName + "is talking.");
-        OnPlayerDialogue?.Invoke(player);
+        Debug.Log("Player is talking.");
+        OnPlayerDialogue?.Invoke();
     }
 
-    public void StartNpcDialogue(NPCIdentity npc)
+    public void EndPlayerDialogue()
     {
-        
-        Debug.Log(npc.npcData.NPC_name + "is talking.");
-        OnNpcDialogue?.Invoke(npc);
+        EndPdialogue?.Invoke();
     }
+    public void StartNpcDialogue(PlantSO plantRequest)
+    {       
+        Debug.Log("In DialogueManager: Starting NPC dialogue.  PlantSO: " + plantRequest);
+        OnNpcDialogue?.Invoke(plantRequest);
+    }   
 }

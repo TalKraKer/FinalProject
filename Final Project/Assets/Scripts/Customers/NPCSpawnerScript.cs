@@ -8,7 +8,11 @@ public class NPCSpawnerScript : MonoBehaviour
     public int spawnTimer;
     public int customerSprite=0;   
     public int timer=0;
-    //public Sprite[] CustomerList;
+    public Sprite[] CustomerList;
+
+    public NPC_SO[] npcList;
+    public int npcIndex = 0;
+
     public int minSpawnTime = 1400;
     public int maxSpawnTime = 3400;
 
@@ -26,9 +30,10 @@ public class NPCSpawnerScript : MonoBehaviour
         if (timer > spawnTimer)
         {
             GameObject c = Instantiate(CustomerPrefab, transform.position, Quaternion.identity);
-            //c.GetComponent<SpriteRenderer>().sprite = CustomerList[customerSprite];
-            //customerSprite = Random.Range(0, CustomerList.Length);          
+            c.GetComponent<SpriteRenderer>().sprite = npcList[npcIndex].NPC_portrait;
+
             OnCustomerSpawned?.Invoke(c);
+            npcIndex++;
             spawnTimer = UnityEngine.Random.Range(minSpawnTime, maxSpawnTime);
             timer = 0;
         }

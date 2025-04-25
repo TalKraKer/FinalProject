@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
 
-[CreateAssetMenu(menuName = "Events/Input Channel")]
+[CreateAssetMenu(fileName = "Input Channel", menuName = "Channels/Input Channel", order = 1)]
 public class InputChannel : ScriptableObject
 {
     public event Action<Vector2> OnMoveEvent;

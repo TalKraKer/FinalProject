@@ -23,7 +23,6 @@ public class MainMenuManager : MonoBehaviour
     public PlayerSO itanSO;
     public PlayerSO shiraSO;
 
-
     public void OnPlayClicked()
     {
         Debug.Log("Play Button clicked");
@@ -89,7 +88,7 @@ public class MainMenuManager : MonoBehaviour
         Application.Quit();
         #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-#endif
+        #endif
     }
     public void ClosePanelButton()
     {
