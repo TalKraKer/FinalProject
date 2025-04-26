@@ -7,7 +7,7 @@ public class GameStateManager : MonoBehaviour
 {
     public event Action<GameState> OnGameStateChange; 
 
-    public static GameStateManager Instance;   
+    public static GameStateManager Instance { get; private set; }
     public GameStateChannel gameStateChannel;
 
     public Input playerInput;
@@ -19,6 +19,62 @@ public class GameStateManager : MonoBehaviour
 
     public Transform playerSpawnPoint;
     void Start()
+    {
+        //if (PlayerSelector.selectedPlayer != null)
+        //{
+        //    currentPlayer = Instantiate(PlayerSelector.selectedPlayer, playerSpawnPoint.position, Quaternion.identity);
+
+        //    PlayerBehavior playerComponent = currentPlayer.GetComponent<PlayerBehavior>();
+
+        //    if (playerComponent != null)
+        //    {
+        //        selectedPlayerSO = PlayerSelector.selectedPlayerSO;
+        //    }
+        //    else
+        //    {
+        //        Debug.LogError("Spawned player is missing Player component!");
+        //    }
+        SetState(currentState); 
+        OnGameStateChange += HandleGameStateChange;     
+        //}
+        //else
+        //{
+        //    Debug.LogError("Select a player prefab.");
+        //}        
+    }
+
+    private void FindPlayerSpawnPoint()
+    {
+        if (playerSpawnPoint == null)
+        {
+            GameObject spawn = GameObject.FindWithTag("PlayerSpawn");
+            if (spawn != null)
+            {
+                playerSpawnPoint = spawn.transform;
+                Debug.Log("Found PlayerSpawn point automatically.");
+            }
+            else
+            {
+                Debug.LogError("No GameObject with 'PlayerSpawn' tag found!");
+            }
+        }
+    }
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    public void SpawnPlayer()
     {
         if (PlayerSelector.selectedPlayer != null)
         {
@@ -32,18 +88,14 @@ public class GameStateManager : MonoBehaviour
             }
             else
             {
-                Debug.LogError("Spawned player is missing Player component!");
+                Debug.LogError("In GameStateManager:  Spawned player is missing PlayerBehavior script!");
             }
         }
         else
         {
-            Debug.LogError("Select a player prefab.");
+            Debug.LogError("In GameStateManager:  Select a Player.");
         }
-        
-        SetState(currentState);
-        OnGameStateChange += HandleGameStateChange;
     }
-
     public void SetCurrentState(GameState state)
     {
         currentState = state;
@@ -74,7 +126,7 @@ public class GameStateManager : MonoBehaviour
 
             case GameState.MainMenu:
                 SwitchToUIInput();
-                Debug.Log("Switched to UI action map.");
+                Debug.Log("Switched to UI action map.");                
                 break;
 
             case GameState.UI:
@@ -134,6 +186,32 @@ public class GameStateManager : MonoBehaviour
         }
     }
 
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "Store")
+        {
+            Debug.Log("Store scene loaded! Spawning player...");
+            FindPlayerSpawnPoint();
+
+            GameObject existingPlayer = GameObject.FindGameObjectWithTag("Player");
+
+            if (existingPlayer != null)
+            {
+                    Debug.Log("Player already exists in scene.");
+                    currentPlayer = existingPlayer;
+            }
+            else if (PlayerSelector.selectedPlayer != null)
+            {
+                    Debug.Log("Spawning new player based on selection");
+                    SpawnPlayer();
+            }
+            else
+            {
+                    Debug.LogError("No player selected in PlayerSelector!");
+            }            
+        }
+    }
+
     private void BookOpened()
     {
         if (currentState == GameState.Book)
@@ -153,6 +231,6 @@ public class GameStateManager : MonoBehaviour
     public void TransitionToScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
-        Debug.Log("Transitioning to: " + sceneName);
+        Debug.Log("In GameStateManager:  Transitioning to: " + sceneName);
     } 
 }

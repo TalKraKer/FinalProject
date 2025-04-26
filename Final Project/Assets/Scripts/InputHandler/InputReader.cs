@@ -1,9 +1,13 @@
+// Ignore Spelling: Dialogue Npc
+
 using UnityEngine;
-//using UnityEngine.Input;
 using UnityEngine.InputSystem;
+using System;
 
 public class InputReader : MonoBehaviour, Input.IPlayerActions, Input.IUIActions
 {
+    public event Action EndNpcDialogue;
+
     public InputChannel inputChannel;
     private Input inputActions;
     
@@ -69,6 +73,7 @@ public class InputReader : MonoBehaviour, Input.IPlayerActions, Input.IUIActions
     {
         if (context.performed)
         {
+            EndNpcDialogue?.Invoke();
             Debug.Log("cancel detected!");
         }
     }

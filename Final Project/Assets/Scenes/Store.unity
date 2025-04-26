@@ -643,7 +643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 1711440549}
-  instance: {fileID: 776392411}
+  instance: {fileID: 0}
   selectedPlayer: {fileID: 0}
   activePlayer: {fileID: 0}
   npcList: []
@@ -1730,7 +1730,7 @@ MonoBehaviour:
   gameStateChannel: {fileID: 11400000, guid: 4588bebec74cb8e4d83796da6ed4e9e0, type: 2}
   selectedPlayerSO: {fileID: 0}
   currentPlayer: {fileID: 0}
-  currentState: 2
+  currentState: 0
   playerSpawnPoint: {fileID: 1983748427}
 --- !u!1 &800876546
 GameObject:
@@ -3577,7 +3577,7 @@ GameObject:
   - component: {fileID: 1983748427}
   m_Layer: 3
   m_Name: PlayerSpawn
-  m_TagString: Player
+  m_TagString: PlayerSpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4126,7 +4126,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2090011930}
         m_TargetAssemblyTypeName: InputReader, Assembly-CSharp
-        m_MethodName: OnInteract
+        m_MethodName: OnOpenBook
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

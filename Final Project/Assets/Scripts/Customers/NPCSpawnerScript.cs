@@ -28,10 +28,18 @@ public class NPCSpawnerScript : MonoBehaviour
     {
         timer++;
         if (timer > spawnTimer)
-        {
-            GameObject c = Instantiate(CustomerPrefab, transform.position, Quaternion.identity);
-            c.GetComponent<SpriteRenderer>().sprite = npcList[npcIndex].NPC_portrait;
+        { 
+            if(npcIndex == 3)
+            {
+                npcIndex = 0;
+            }
 
+            GameObject c = Instantiate(CustomerPrefab, transform.position, Quaternion.identity);
+            if (CustomerPrefab != null)
+            {
+                c.GetComponent<SpriteRenderer>().sprite = npcList[npcIndex].NPC_portrait;
+            }
+           
             OnCustomerSpawned?.Invoke(c);
             npcIndex++;
             spawnTimer = UnityEngine.Random.Range(minSpawnTime, maxSpawnTime);

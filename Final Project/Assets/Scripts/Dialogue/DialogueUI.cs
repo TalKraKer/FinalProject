@@ -10,7 +10,8 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] GameObject npcDialoguePanel;
     [SerializeField] Button cancelButton;
 
-   // private PlantSO request;
+    private DialogueManager dm;
+    // private PlantSO request;
 
     public Image portraitImage;
     public TextMeshProUGUI nameText;
@@ -30,18 +31,23 @@ public class DialogueUI : MonoBehaviour
 
     private void OnEnable()
     {
-        DialogueManager dm = FindObjectOfType<DialogueManager>();
+        dm = FindObjectOfType<DialogueManager>();
         dm.OnPlayerDialogue += DisplayPlayerDialogue;
         dm.OnNpcDialogue += DisplayNpcDialogue;
         dm.EndPdialogue += EndPlayerDialogue;
+        dm.EndNpcDialogue += EndNpcDialogue;
     }
 
     private void OnDisable()
-    {
-        DialogueManager dm = FindObjectOfType<DialogueManager>();
-        dm.OnPlayerDialogue -= DisplayPlayerDialogue;
-        dm.OnNpcDialogue -= DisplayNpcDialogue;
-        dm.EndPdialogue -= EndPlayerDialogue;
+    {        
+        if (dm != null)
+        {
+            dm.OnPlayerDialogue -= DisplayPlayerDialogue;
+            dm.OnNpcDialogue -= DisplayNpcDialogue;
+            dm.EndPdialogue -= EndPlayerDialogue;
+            dm.EndNpcDialogue -= EndNpcDialogue;
+
+        }
     }
     public void DisplayPlantRequest(PlantSO randomPlantSO)
     {
