@@ -1,18 +1,17 @@
-using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 public class NPCSpawnerScript : MonoBehaviour
 {
+
     public GameObject CustomerPrefab;
     public int spawnTimer;
-    public int customerSprite=0;   
-    public int timer=0;
-    //public Sprite[] CustomerList;
-    public int minSpawnTime = 1400;
-    public int maxSpawnTime = 3400;
-
-    public static event Action<GameObject> OnCustomerSpawned;
+    public int customerSprite=0;
+    public float timer=0;
+    public Sprite[] CustomerList;
+    public int minSpawnTime = 500;
+    public int maxSpawnTime = 1500;
 
     private void Start()
     {
@@ -26,10 +25,9 @@ public class NPCSpawnerScript : MonoBehaviour
         if (timer > spawnTimer)
         {
             GameObject c = Instantiate(CustomerPrefab, transform.position, Quaternion.identity);
-            //c.GetComponent<SpriteRenderer>().sprite = CustomerList[customerSprite];
-            //customerSprite = Random.Range(0, CustomerList.Length);          
-            OnCustomerSpawned?.Invoke(c);
-            spawnTimer = UnityEngine.Random.Range(minSpawnTime, maxSpawnTime);
+            c.GetComponent<SpriteRenderer>().sprite = CustomerList[customerSprite];
+            customerSprite = Random.Range(0, CustomerList.Length);
+            spawnTimer = Random.Range(minSpawnTime, maxSpawnTime);
             timer = 0;
         }
     }

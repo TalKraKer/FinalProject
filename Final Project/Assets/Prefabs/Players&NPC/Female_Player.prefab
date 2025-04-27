@@ -275,6 +275,7 @@ MonoBehaviour:
   playerData: {fileID: 11400000, guid: 1dea0d8939249874980cbf18cf52dbb7, type: 2}
   moveSpeed: 5
   PlantHoldPos: {fileID: 5519395114897838377}
+  inputChannel: {fileID: 11400000, guid: 4a1efbee397abe346a3d78fa08d70b89, type: 2}
   onRegister: 0
   onPlant: 0
   onRestock: 0

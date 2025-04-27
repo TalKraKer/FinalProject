@@ -1,7 +1,6 @@
 using Assets.Scripts.Managers;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,6 +23,8 @@ public class CustomerBehavior : MonoBehaviour
     bool onPlant;
     GameObject PlantYouPick;
 
+    GameObject UiManager;
+
     NPC_LineManagement LineManager;
     public int CurrentCustomerNumber = 0;
 
@@ -33,6 +34,11 @@ public class CustomerBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (UiManager == null)
+        {
+            UiManager = GameObject.Find("UiManager");
+        }
+
         step = 4.0f * Time.deltaTime;
         TimerBar.gameObject.SetActive(false);
         StartPoint = new Vector2(11, -4.5f);
@@ -208,6 +214,7 @@ public class CustomerBehavior : MonoBehaviour
     {
         if (CurrentState == NPC_State.InLine && CurrentCustomerNumber == 1)
         {
+            UiManager.GetComponent<MoneyManager>().addMoney(PlantYouPick.GetComponent<Plant>().currentPlantType.Price); 
             NextState();
         }
     }

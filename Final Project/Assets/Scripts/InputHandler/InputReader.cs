@@ -1,12 +1,11 @@
 using UnityEngine;
-//using UnityEngine.Input;
 using UnityEngine.InputSystem;
 
-public class InputReader : MonoBehaviour, Input.IPlayerActions, Input.IUIActions
+public class InputReader : MonoBehaviour
 {
     public InputChannel inputChannel;
     private Input inputActions;
-    
+
     private void Awake()
     {
         inputActions = new Input();
@@ -14,11 +13,7 @@ public class InputReader : MonoBehaviour, Input.IPlayerActions, Input.IUIActions
         inputActions.Player.Move.performed += OnMove;
         inputActions.Player.Move.canceled += OnMove;
 
-        inputActions.Player.Interact.performed += OnInteract;
-        inputActions.Player.OpenBook.performed += OnOpenBook;
-
-        inputActions.UI.LeftClick.performed += OnLeftClick;
-        inputActions.UI.Cancel.performed += OnCancel;
+        inputActions.Player.Interact.started += OnInteract;
 
         inputActions.Enable();
     }
@@ -27,13 +22,7 @@ public class InputReader : MonoBehaviour, Input.IPlayerActions, Input.IUIActions
     {
         inputActions.Player.Move.performed -= OnMove;
         inputActions.Player.Move.canceled -= OnMove;
-
-        inputActions.Player.Interact.performed -= OnInteract;
-        inputActions.Player.OpenBook.performed -= OnOpenBook;
-
-        inputActions.UI.LeftClick.performed -= OnLeftClick;
-        inputActions.UI.Cancel.performed -= OnCancel;
-
+        inputActions.Player.Interact.started -= OnInteract;
         inputActions.Disable();
     }
 
@@ -49,27 +38,5 @@ public class InputReader : MonoBehaviour, Input.IPlayerActions, Input.IUIActions
     {
         inputChannel.RaiseInteract();
         Debug.Log("InputReader: Interact pressed (E)");
-    }
-
-    public void OnOpenBook(InputAction.CallbackContext context)
-    {
-        inputChannel.RaiseInteract();
-        Debug.Log("InputReader: Interact pressed (Q)");
-    }
-
-    public void OnLeftClick(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            Debug.Log("Left click detected!");
-        }
-    }
-
-    public void OnCancel(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            Debug.Log("cancel detected!");
-        }
-    }
+    } 
 }

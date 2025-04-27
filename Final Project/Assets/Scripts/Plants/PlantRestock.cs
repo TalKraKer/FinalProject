@@ -7,7 +7,7 @@ public class PlantRestock : MonoBehaviour
     bool restocked;
     public GameObject[] Plants;
     GameObject PlantHoldPos;
-    [SerializeField] GameObject Player;
+    GameObject Player;
 
     [SerializeField] GameObject PlantParent;
     [SerializeField] GameObject PlantPrefab;
@@ -16,12 +16,18 @@ public class PlantRestock : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Player = GameObject.FindGameObjectWithTag("Player");
         PlantHoldPos = GameObject.Find("PlayerPlantHoldPos");
         Plants = GameObject.FindGameObjectsWithTag("Plant");
     }
 
     public void restock()
     {
+        if (Player == null)
+        {
+            Player = GameObject.FindGameObjectWithTag("Player");
+            PlantHoldPos = GameObject.Find("PlayerPlantHoldPos");
+        }
         restocked = false;
         foreach (GameObject Plant in Plants)
         {
