@@ -1,0 +1,1016 @@
+fileFormatVersion: 2
+guid: 2aa25f5b60f188f46a692167a416cd93
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boris_Front_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 676
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d44a6179dd32c041887c21ba0d972f7
+      internalID: 858466968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_1
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 676
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23440b80662d1a74d867249d8e756c2c
+      internalID: -1400811819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_2
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 676
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d774d70e22d0648abe9ad06b0801fd
+      internalID: -745820103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_3
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 676
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89444941d03699f42830f5771497a9c8
+      internalID: 1004581718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_4
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 676
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97440079cc556ed47b0369e092b2f9ee
+      internalID: -1636171565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_5
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 676
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6c0b25d423b0046808161fabf60c7b
+      internalID: 1493259418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_6
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 676
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c3f67eeec168f459a4045b9c5f15a6
+      internalID: -2114323301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_7
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 676
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ff895b2449ef6419fbb8facc43e0d4
+      internalID: 584025095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_8
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 676
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6668f6f32881c394c8ab1ac72189625f
+      internalID: -1668934046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_9
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 676
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1f08defbefbf14dbf617067476b1b3
+      internalID: -1011045692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_10
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 676
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce0cb1ac85cd334a9545587a17a0a8f
+      internalID: -849178472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_11
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 676
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b120e58fa432b94492ecb33b375326c
+      internalID: 2110177696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_12
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 676
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a14934d1946985448babd91386aad11
+      internalID: 223221326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_13
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 676
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b17f00735c74847b3953bbf95d3d61
+      internalID: -608103803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_14
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 676
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed1725e809c850488c630fdcb03ce2c
+      internalID: 728140050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_15
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 676
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c9ab3cf79ae4f48846c2d1c2f64649
+      internalID: 290936461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_16
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 676
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8072c1adbd51d2148bb1b17b9bed9715
+      internalID: 1329037914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_17
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 676
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ae722d4951e894bb7231185995c2ef
+      internalID: 1756752936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 381
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eec5da54255b5645a053030102aeb84
+      internalID: -1100394287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_19
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 381
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8732c73e263ea49889ac87a7e88fe6
+      internalID: -881487980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_20
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 381
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370bd3d9ccb1253419fabf260886cc33
+      internalID: 592845302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_21
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 381
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224b46772d355bc44a3d86660b1173c1
+      internalID: 1136321868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_22
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 381
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ff6798ec607414c8d50f8636374b59
+      internalID: 1810447604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_23
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 381
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a391dc1bf53ea4f8472865748fbb7e
+      internalID: -127506838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_24
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 381
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b22fffd0f15df49b09e899cc2c852c
+      internalID: -693458287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_25
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 381
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9bc4c44d2a33a4ea9ac78dd79b618c
+      internalID: -376597441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_26
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 381
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db1267d844dc2a48bfd2b9335ca5e56
+      internalID: 1984495099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_27
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 381
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6db2f0b4d850b646aa7b41507f84543
+      internalID: -223205063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_28
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 381
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22351b4b115217d4d84aee650eb00cfd
+      internalID: -945909286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_29
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 381
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2942cc1522be58c46881ee584abaef7f
+      internalID: 742825202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_30
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 381
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7494b6f8b7baa84f9175317f24629b7
+      internalID: -2063912874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_31
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 381
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15027c76c1443ef48a76d8fd41b18b78
+      internalID: -2052474123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_32
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 381
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12af4c1c299f3684eb5191d629a62e60
+      internalID: 918523195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_33
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 381
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b0386105b1cc440a5840d49bf428ea
+      internalID: -336082590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_34
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 381
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08d41ed9ea59bb46ba682c18e178d5c
+      internalID: 1204967660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_35
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 381
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2a1af212645284faca8b7cb62c4a29
+      internalID: -1150170926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 86
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e8d080e2361c445a56aaf4eb666167
+      internalID: 445193438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_37
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 86
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0563e127729976a4eae931f7481d10e4
+      internalID: -980800347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_38
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 86
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b06697ac3a25b489a79775d027a521
+      internalID: -1937178779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_39
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 86
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6673dc1766aa2d418d310597d52627d
+      internalID: -764504937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boris_Front_40
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 86
+        width: 110
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc93aa1eca63dd246826fb2826094c2e
+      internalID: 1448070639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Boris_Front_0: 858466968
+      Boris_Front_1: -1400811819
+      Boris_Front_10: -849178472
+      Boris_Front_11: 2110177696
+      Boris_Front_12: 223221326
+      Boris_Front_13: -608103803
+      Boris_Front_14: 728140050
+      Boris_Front_15: 290936461
+      Boris_Front_16: 1329037914
+      Boris_Front_17: 1756752936
+      Boris_Front_18: -1100394287
+      Boris_Front_19: -881487980
+      Boris_Front_2: -745820103
+      Boris_Front_20: 592845302
+      Boris_Front_21: 1136321868
+      Boris_Front_22: 1810447604
+      Boris_Front_23: -127506838
+      Boris_Front_24: -693458287
+      Boris_Front_25: -376597441
+      Boris_Front_26: 1984495099
+      Boris_Front_27: -223205063
+      Boris_Front_28: -945909286
+      Boris_Front_29: 742825202
+      Boris_Front_3: 1004581718
+      Boris_Front_30: -2063912874
+      Boris_Front_31: -2052474123
+      Boris_Front_32: 918523195
+      Boris_Front_33: -336082590
+      Boris_Front_34: 1204967660
+      Boris_Front_35: -1150170926
+      Boris_Front_36: 445193438
+      Boris_Front_37: -980800347
+      Boris_Front_38: -1937178779
+      Boris_Front_39: -764504937
+      Boris_Front_4: -1636171565
+      Boris_Front_40: 1448070639
+      Boris_Front_5: 1493259418
+      Boris_Front_6: -2114323301
+      Boris_Front_7: 584025095
+      Boris_Front_8: -1668934046
+      Boris_Front_9: -1011045692
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
