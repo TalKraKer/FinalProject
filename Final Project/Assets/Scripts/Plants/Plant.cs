@@ -13,7 +13,7 @@ public class Plant : MonoBehaviour
         {
             currentPlantType = PlantTypes[Random.Range(0,PlantTypes.Length)];
         }
-        GetComponent<SpriteRenderer>().sprite = currentPlantType.Icon;
+        GetComponent<SpriteRenderer>().sprite = currentPlantType.Image;
     }
 
     // Update is called once per frame

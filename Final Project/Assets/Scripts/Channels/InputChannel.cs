@@ -1,7 +1,6 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Events;
 
 [CreateAssetMenu(menuName = "Events/Input Channel")]
 public class InputChannel : ScriptableObject

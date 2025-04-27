@@ -1,4 +1,5 @@
 using UnityEngine;
+
 public class CashRegister : MonoBehaviour
 {
     private bool playerInZone = false;
@@ -10,6 +11,7 @@ public class CashRegister : MonoBehaviour
     public PlayerSelector selectedPlayer;
     public PlayerSO activePlayer;
     public NPC_SO[] npcList;
+    public GameObject newNPC;
 
     void Start()
     {
@@ -25,12 +27,12 @@ public class CashRegister : MonoBehaviour
 
     private void OnEnable()
     {
-        NPCSpawnerScript.OnCustomerSpawned += ReadNPCData;
+        NPCSpawnerScript.OnCustomerSpawnedEvent += () => ReadNPCData(newNPC);
     }
 
     private void OnDisable()
     {
-        NPCSpawnerScript.OnCustomerSpawned -= ReadNPCData;
+        NPCSpawnerScript.OnCustomerSpawnedEvent -= () => ReadNPCData(newNPC);
     }
 
     private void ReadNPCData(GameObject newNPC)

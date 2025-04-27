@@ -211,6 +211,15 @@ public partial class @Input: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""book"",
+                    ""type"": ""Button"",
+                    ""id"": ""1c8f9852-7919-43f4-b520-0ca49e695711"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -233,6 +242,17 @@ public partial class @Input: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": "";Keyboard"",
                     ""action"": ""Cancel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""50a2491b-2024-4486-86fe-b4c7bcb7e521"",
+                    ""path"": ""<Keyboard>/b"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""book"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -278,6 +298,7 @@ public partial class @Input: IInputActionCollection2, IDisposable
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_LeftClick = m_UI.FindAction("Left Click", throwIfNotFound: true);
         m_UI_Cancel = m_UI.FindAction("Cancel", throwIfNotFound: true);
+        m_UI_book = m_UI.FindAction("book", throwIfNotFound: true);
     }
 
     ~@Input()
@@ -409,12 +430,14 @@ public partial class @Input: IInputActionCollection2, IDisposable
     private List<IUIActions> m_UIActionsCallbackInterfaces = new List<IUIActions>();
     private readonly InputAction m_UI_LeftClick;
     private readonly InputAction m_UI_Cancel;
+    private readonly InputAction m_UI_book;
     public struct UIActions
     {
         private @Input m_Wrapper;
         public UIActions(@Input wrapper) { m_Wrapper = wrapper; }
         public InputAction @LeftClick => m_Wrapper.m_UI_LeftClick;
         public InputAction @Cancel => m_Wrapper.m_UI_Cancel;
+        public InputAction @book => m_Wrapper.m_UI_book;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -430,6 +453,9 @@ public partial class @Input: IInputActionCollection2, IDisposable
             @Cancel.started += instance.OnCancel;
             @Cancel.performed += instance.OnCancel;
             @Cancel.canceled += instance.OnCancel;
+            @book.started += instance.OnBook;
+            @book.performed += instance.OnBook;
+            @book.canceled += instance.OnBook;
         }
 
         private void UnregisterCallbacks(IUIActions instance)
@@ -440,6 +466,9 @@ public partial class @Input: IInputActionCollection2, IDisposable
             @Cancel.started -= instance.OnCancel;
             @Cancel.performed -= instance.OnCancel;
             @Cancel.canceled -= instance.OnCancel;
+            @book.started -= instance.OnBook;
+            @book.performed -= instance.OnBook;
+            @book.canceled -= instance.OnBook;
         }
 
         public void RemoveCallbacks(IUIActions instance)
@@ -485,5 +514,6 @@ public partial class @Input: IInputActionCollection2, IDisposable
     {
         void OnLeftClick(InputAction.CallbackContext context);
         void OnCancel(InputAction.CallbackContext context);
+        void OnBook(InputAction.CallbackContext context);
     }
 }
