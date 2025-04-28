@@ -833,6 +833,38 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ce7b5b39e68acf342a4039e2349bf004, type: 2}
   - {fileID: 11400000, guid: 3a864a38f158ce943a5524267d6ffa71, type: 2}
   randomPlantSO: {fileID: 0}
+--- !u!1 &180636342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 180636343}
+  m_Layer: 0
+  m_Name: Furniture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &180636343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180636342}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.86, y: 0.68, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1464303896}
+  m_Father: {fileID: 2121596738}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &232010400
 GameObject:
   m_ObjectHideFlags: 0
@@ -4162,7 +4194,7 @@ GameObject:
   - component: {fileID: 1464303896}
   - component: {fileID: 1464303895}
   m_Layer: 0
-  m_Name: Screenshot_2025-04-21_125335-removebg-preview
+  m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4228,12 +4260,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464303894}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.48, y: -4.71, z: 0}
-  m_LocalScale: {x: 1.5801, y: 1.4031, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.8155084, y: -2.5193183, z: -2}
+  m_LocalScale: {x: 0.62203664, y: 0.56970143, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 180636343}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1497017776
 GameObject:
@@ -6541,6 +6573,7 @@ Transform:
   - {fileID: 985819201}
   - {fileID: 670949949}
   - {fileID: 164030680}
+  - {fileID: 180636343}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2130740898
@@ -6824,4 +6857,3 @@ SceneRoots:
   - {fileID: 1988365864}
   - {fileID: 2064497801}
   - {fileID: 2093095694}
-  - {fileID: 1464303896}
