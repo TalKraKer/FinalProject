@@ -31,12 +31,12 @@ public class CashRegister : MonoBehaviour
 
     private void OnEnable()
     {
-        NPCSpawnerScript.OnCustomerSpawnedEvent += () => ReadNPCData(newNPC);
+       // NPCSpawnerScript.OnCustomerSpawnedEvent += () => ReadNPCData(newNPC);
     }
 
     private void OnDisable()
     {
-        NPCSpawnerScript.OnCustomerSpawnedEvent -= () => ReadNPCData(newNPC);
+       // NPCSpawnerScript.OnCustomerSpawnedEvent -= () => ReadNPCData(newNPC);
     }
 
     private void ReadNPCData(GameObject newNPC)

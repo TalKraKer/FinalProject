@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System;
 
-public class InputReader : MonoBehaviour, Input.IPlayerActions, Input.IUIActions
+public class InputReader : MonoBehaviour, Input.IPlayerActions
 {
     public event Action EndNpcDialogue;
 
