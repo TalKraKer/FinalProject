@@ -22,15 +22,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "OpenBook",
-                    "type": "Button",
-                    "id": "bf639124-3a25-474b-8b98-adab4d12e180",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -152,17 +143,6 @@
                     "processors": "",
                     "groups": ";Keyboard",
                     "action": "Interact",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "e1d07ede-e0fe-4680-8906-1b2158e1b7a4",
-                    "path": "<Keyboard>/q",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard",
-                    "action": "OpenBook",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -146,7 +146,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlantTypes:
   - {fileID: 11400000, guid: f4f61ccb2906afc459d2f5786e0903ee, type: 2}
-  - {fileID: 11400000, guid: 89909798057dc284cb4bbf6e6e5aed82, type: 2}
+  - {fileID: 11400000, guid: 402d819f05459864f9758c4e3b5053ec, type: 2}
+  - {fileID: 11400000, guid: ce7b5b39e68acf342a4039e2349bf004, type: 2}
+  - {fileID: 11400000, guid: 3a864a38f158ce943a5524267d6ffa71, type: 2}
   currentPlantType: {fileID: 0}
 --- !u!114 &7330797334376091345
 MonoBehaviour:

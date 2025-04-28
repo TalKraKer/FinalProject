@@ -31,12 +31,12 @@ public class CashRegister : MonoBehaviour
 
     private void OnEnable()
     {
-       // NPCSpawnerScript.OnCustomerSpawnedEvent += () => ReadNPCData(newNPC);
+        NPCSpawnerScript.OnCustomerSpawnedEvent += ReadNPCData;
     }
 
     private void OnDisable()
     {
-       // NPCSpawnerScript.OnCustomerSpawnedEvent -= () => ReadNPCData(newNPC);
+        NPCSpawnerScript.OnCustomerSpawnedEvent -= ReadNPCData;
     }
 
     private void ReadNPCData(GameObject newNPC)
@@ -54,23 +54,22 @@ public class CashRegister : MonoBehaviour
             playerInZone = true;
 
         if (other.CompareTag("NPC"))       
-            npcInZone = true;     
+            npcInZone = true;
 
         if (playerInZone && npcInZone)
         {
             dialogueManager.StartPlayerDialogue();
-            Time.timeScale = 3f;
+            //Time.timeScale = 3f;
 
             dialogueManager.EndPlayerDialogue();
 
             if (randomP >= 0 && randomP < 6)
             {
-                randomP = UnityEngine.Random.Range(0, 5);
+                randomP = UnityEngine.Random.Range(0, plantSO.Length);
                 randomPlantSO = plantSO[randomP];
                 Debug.Log("In CashRegister:  randomPlantSO : " + randomPlantSO);
-
                 dialogueManager.StartNpcDialogue(randomPlantSO);
-            }        
+            }
         }
     }
 

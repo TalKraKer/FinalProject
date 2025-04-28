@@ -11,6 +11,7 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] Button cancelButton;
 
     private DialogueManager dm;
+    public Input playerInput;
     // private PlantSO request;
 
     public Image portraitImage;
@@ -29,6 +30,10 @@ public class DialogueUI : MonoBehaviour
     public Sprite partialShade;
     public Sprite fullShade;
 
+    private void Start()
+    {
+        cancelButton.onClick.AddListener(EndNpcDialogue);
+    }
     private void OnEnable()
     {
         dm = FindObjectOfType<DialogueManager>();
@@ -36,6 +41,7 @@ public class DialogueUI : MonoBehaviour
         dm.OnNpcDialogue += DisplayNpcDialogue;
         dm.EndPdialogue += EndPlayerDialogue;
         dm.EndNpcDialogue += EndNpcDialogue;
+        playerInput = new();
     }
 
     private void OnDisable()
@@ -46,7 +52,6 @@ public class DialogueUI : MonoBehaviour
             dm.OnNpcDialogue -= DisplayNpcDialogue;
             dm.EndPdialogue -= EndPlayerDialogue;
             dm.EndNpcDialogue -= EndNpcDialogue;
-
         }
     }
     public void DisplayPlantRequest(PlantSO randomPlantSO)
@@ -100,19 +105,33 @@ public class DialogueUI : MonoBehaviour
     }
 
     public void DisplayNpcDialogue(PlantSO randomPlantSO)
-    {       
-        cancelButton.gameObject.SetActive(true);
-        npcDialoguePanel.SetActive(true);
+    {
+        if (npcDialoguePanel.activeInHierarchy)
+        {
+            cancelButton.gameObject.SetActive(false);
+            npcDialoguePanel.SetActive(false);
+            playerInput.Player.Enable();
+            playerInput.UI.Disable();
+        }    
+        if (!npcDialoguePanel.activeInHierarchy)
+        {
+            playerInput.Player.Disable();
+            playerInput.UI.Enable();
 
-        Debug.LogWarning("PlantRequest: diff: "+ randomPlantSO.difficultyLevel + "water: " + randomPlantSO.waterRequirement);
-        DisplayPlantRequest(randomPlantSO);
+            cancelButton.gameObject.SetActive(true);
+            npcDialoguePanel.SetActive(true);
 
+            Debug.LogWarning("PlantRequest: diff: "+ randomPlantSO.difficultyLevel + "water: " + randomPlantSO.waterRequirement);
+            //DisplayPlantRequest(randomPlantSO);
+        }
+        
       //  portraitImage.sprite = npc.NPC_portrait;
        // nameText.text = npc.NPC_name;
     }
 
     public void EndNpcDialogue()
     {
+        Debug.Log("End NPC Dialogue");
         cancelButton.gameObject.SetActive(false);
         npcDialoguePanel.SetActive(false);
     }

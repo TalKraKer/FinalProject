@@ -8,4 +8,5 @@ public class PlantSO : ScriptableObject
         public int sunRequirement;
         public int difficultyLevel;
         public Sprite Image;
+        public Transform GetTransform;
 }

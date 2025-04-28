@@ -16,7 +16,7 @@ public class NPCSpawnerScript : MonoBehaviour
     public int minSpawnTime = 1400;
     public int maxSpawnTime = 3400;
 
-    public static event Action<GameObject> OnCustomerSpawned;
+    public static event Action<GameObject> OnCustomerSpawnedEvent;
 
     private void Start()
     {
@@ -39,8 +39,8 @@ public class NPCSpawnerScript : MonoBehaviour
             {
                 c.GetComponent<SpriteRenderer>().sprite = npcList[npcIndex].NPC_portrait;
             }
-           
-            OnCustomerSpawned?.Invoke(c);
+
+            OnCustomerSpawnedEvent?.Invoke(c);
             npcIndex++;
             spawnTimer = UnityEngine.Random.Range(minSpawnTime, maxSpawnTime);
             timer = 0;

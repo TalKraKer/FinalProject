@@ -222,7 +222,7 @@ public class GameStateManager : MonoBehaviour
         else
         {
             currentState = GameState.Book;
-            Time.timeScale = 0f;
+            //Time.timeScale = 0f;
         }
 
         OnGameStateChange?.Invoke(currentState);
